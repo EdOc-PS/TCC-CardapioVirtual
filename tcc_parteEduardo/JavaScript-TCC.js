@@ -1,15 +1,17 @@
 //clicar na posição
-function lanche(){
-    const lanches = document.getElementById("lancheTitulo");
-    lanches.scrollIntoView({behavior: "smooth"});
-}
-function bebida(){
-    const bebidas = document.getElementById("bebidaTitulo");
-    bebidas.scrollIntoView({behavior: "smooth"});
-}
-function sobremesa(){
-    const sobremesas = document.getElementById("sobremesaTitulo");
-    sobremesas.scrollIntoView({behavior: "smooth"});
+function escolher(valor){
+    if(valor.value=="lanche"){
+        const lanches = document.getElementById("lancheTitulo");
+        lanches.scrollIntoView({behavior: "smooth"});
+    }
+    if(valor.value=="bebida"){
+        const bebidas = document.getElementById("bebidaTitulo");
+        bebidas.scrollIntoView({behavior: "smooth"});
+    }
+    if(valor.value=="sobremesa"){
+        const sobremesas = document.getElementById("sobremesaTitulo");
+        sobremesas.scrollIntoView({behavior: "smooth"});
+    }
 }
 
 //carrinho

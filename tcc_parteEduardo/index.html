@@ -22,9 +22,9 @@
             <a href="#" class="active">Get Started</a>
         </nav>
         <ul class="headerUL">
-            <li class="headerLI"> <a href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+            <li class="headerLI"> <a href="#"><i class="fa-solid fa-user fa-2x carrinho user" aria-hidden="true"></i></a></li>
             <li class="headerLI"> <button class="menu-btn">
-                    <img src="img/carrinho.png" class="carrinho">
+                    <i class="fa-solid fa-cart-shopping carrinho fa-3x"></i>
                 </button></li>
         </ul>
     </header>
@@ -34,6 +34,12 @@
     <button onclick="lanche()">Lanches</button>
     <button onclick="bebida()">Bebidas</button>
     <button onclick="sobremesa()">Sobremesa</button>
+
+    <select onchange="escolher(this)">
+        <option value="lanche">Lanches</option>
+        <option value="bebida">Bebidas</option>
+        <option value="sobremesa">Sobremesa</option>
+      </select>
     <br><br>
 
     <h1 id="lancheTitulo">Lanches</h1>
