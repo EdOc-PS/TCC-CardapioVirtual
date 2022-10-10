@@ -20,11 +20,12 @@ header{
 
 .classcabecalho{
     height:120px; 
-    background-color: #711613;
+    background: linear-gradient(800deg, #3a1624, #711613);
 }
 .classcabecalhomin{
-    background-color: #711613;
+    background: linear-gradient(800deg, #3a1624,#711613);
     height:80px;
+    
 }
 
 .logoimg{
@@ -133,4 +134,10 @@ header nav a:hover{
     width: 60px;
     border-radius: 6px;
    
+}
+.escolha{
+    height: 30px;
+    width: 755px;
+    border-radius: 10px;
+
 }
