@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCC</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="popestilos.css">
+    <link rel="stylesheet" href="rodape.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="classcabecalho"> <img src="img/logo3.png" class="logoimg">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About us</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <a href="#" class="active">Get Started</a>
+        </nav>
+        <ul class="headerUL">
+            <li class="headerLI"> <a href="#"><i class="fa-solid fa-user fa-2x carrinho user" aria-hidden="true"></i></a></li>
+            <li class="headerLI"> <button class="menu-btn">
+                    <i class="fa-solid fa-cart-shopping carrinho fa-3x"></i>
+                </button></li>
+        </ul>
+    </header>
+
+    <br><br><br><br><br><br><br><br>
+
+    <select  class="escolha" onchange="escolher(this)">
+        <option value="lanche">Lanches</option>
+        <option value="bebida">Bebidas</option>
+        <option value="sobremesa">Sobremesa</option>
+      </select>
+    <br><br>
+
+    <h1 id="lancheTitulo">Lanches</h1>
+    <br>
+    <div class="d1">
+        <button class=popup-link>
+            <!-- <img class="im2" src="img/pao.jpg">--> fdfadsf Link qualquer
+        </button>
+    </div>
+
+    <div class="popup-fundo">
+        <div class="popup">
+            <div class="popup-fechar"> X </div>
+            <div class="popup-content">
+                <div id="Img_Lanche">
+                    <img class=imgp style="width: 80%; border-radius: 15px;" src="misto.jpg">
+                </div>
+                <button onclick="proximo_item()">+</button>
+                <button onclick="voltar_item()">-</button>
+                <button onclick="Add_carrinho()">ADD</button>
+                <form>
+                    <select id="qtde" name="qtde" size="1">
+                        <option value="0" selected>0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h1 id="bebidaTitulo">Bebidas</h1>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h1 id="sobremesaTitulo">Sobremesa</h1>
+
+
+    <!-- Rodapé-->
+    <footer>
+        <div class="caixa">
+            <h2> Início </h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Produto</a></li>
+                <li><a href="#">Download</a></li>
+            </ul>
+        </div>
+
+        <div class="caixa">
+
+            <h2>Sobre nós</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, aliquam incidunt nobis praesentium a
+                dolorum dolores id quae sequi earum, doloribus eum nemo nisi accusamus impedit magnam porro aspernatur
+                optio?
+            </p>
+        </div>
+    </footer>
+    <div class="rodape">
+        <h2><i class="fa-solid fa-mug-saucer" aria-hidden="true"></i></h2>
+        <div class="sociais">
+            <div class="social"> <a href="#"> <i class="fa-brands fa-instagram" aria-hidden="true"></i> </a></div>
+            <div class="social"> <a href="#"> <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> </a></div>
+        </div>
+    </div>
+
+
+    <script src="./JavaScript-TCC.js"></script>
+    <script src="./popupjs.js"></script>
+</body>
+
+</html>
