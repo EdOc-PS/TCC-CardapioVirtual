@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+    <title>Login</title>
     <link rel="stylesheet" href="estilo-formularios.css">
 </head>
 
 <body>
     <fieldset class="bordaForm">
-        <form action="insert.php" method="post">
-            <h1 class="titulo">Cadastro</h1>
+        <form action="atualiza.php" method="post">
+            <h1 class="titulo">Login</h1>
 
             <div class="input-block">
                 <label for="nome">Nome:</label><br>
@@ -22,7 +22,7 @@
 
             <div style="height: 90px;"></div>
 
-            <div class="input-block">
+            <div class="input-block">    
                 <label for="cel">Telefone:</label><br>
                 <input type="text" id="cel" name="cel" placeholder="(99) 9 9999-9999" maxlength="16" required>
             </div>
@@ -30,11 +30,11 @@
             <div style="height: 90px;"></div>
 
             <div class= divcadastro>
-                <input type="submit" id="enviar" value="Cadastrar" style="margin-right: 10%;">
+                <input type="submit" id="enviar" value="Fazer Login" style="margin-right: 10%;">
                 <a href="index.html"><input type="button" value="Cancelar"></a>
             </div>
         </form>
-        <p style="text-align: center;">Já possui uma conta? <a href="login.html">Faça login</a></p>
+        <p style="text-align: center;">Ainda não possui uma conta? <a href="CadastroHTML.html">Registre-se</a></p>
     </fieldset>
     <ul class="fundo">
         <li></li>
