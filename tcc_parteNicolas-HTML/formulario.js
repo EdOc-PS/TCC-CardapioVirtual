@@ -22,7 +22,7 @@ input.addEventListener('keypress', () => {
 // Animação fundo//
 const ulFundo = document.querySelector("ul.fundo");
 
-for(let e = 0; e < 11; e++){
+for(let e = 0; e < 14; e++){
 
     const li = document.createElement("li");
     const random =  (min, max) => Math.random() * (max - min) + min;
