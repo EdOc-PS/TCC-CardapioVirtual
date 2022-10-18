@@ -1,132 +1,53 @@
-*{
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-body{
-    background: linear-gradient(90deg, #711613, #3a1624);
-}
 
-.titulo{
-    text-align: center;
-    margin-right: 10%;
-    padding-bottom: 5%;
-    font-weight: bold;
-}
 
-.bordaForm{
-    border-radius: 10px;
-    width: 30%;
-    border:none;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 10%;
-    height: 580px;
-    background-color: white;
-    animation: fade 1s;
-}
-form{
-    margin-left: 10%; 
-    overflow: hidden;
-}
-form .input-block:nth-child(2){
-     animation: move 500ms;
-     animation-delay: 100ms;
-     animation-fill-mode: backwards;
-
-}
-form .input-block:nth-child(4){
-    animation: move 500ms;
-    animation-delay: 400ms;
-    animation-fill-mode: backwards;
-}
-form .divcadastro{
-    text-align: center; 
-    margin-right: 15%;
-    animation: move 500ms;
-    animation-delay: 700ms;
-    animation-fill-mode: backwards;
-}
-label{
-    font-weight: bold;
-    font-size: 1.5rem;
-   
-}
-
-input[type=text]{
-    width: 85%;
-    border: none;
-    border-bottom: 3px solid #323232;
-    padding: 10px;
-    font-size: .9rem;
-}
-input:focus{
-    outline: none;
-    border-color: #3a1624;
-}
-
-input[type=submit]{
-    width: 35%;
-    font-size: 20px;
-    height: 45px;
-    border: none;
-    box-shadow: 0px 3px 5px rgb(60, 60, 60);
-    background: linear-gradient(135deg, #3838db 60px, #711613);
-    border-radius: 10px;
-    cursor: pointer;
-}
-input[type=submit]:hover{
-    background: linear-gradient(-105deg, #1e1eaa 60px, #3a1624); 
-    animation: bot 800ms;   
-    animation-timing-function: ease-in-out;
-    animation-iteration-count:infinite;
+*Animação para o fundo*/
+.fundo li{
+  
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(90deg, rgba(113, 22, 19, 0.35), rgba(58, 22, 36, 0.35));
+    display: block;
+    position: absolute;
+    bottom: -40px;
+    animation: up 5s infinite;
     animation-direction: alternate;
-}
-
-input[type=button]{
-    width: 35%;
-    font-size: 20px;
-    height: 45px;
-    border: none;
-    box-shadow: 0px 5px 5px rgb(60, 60, 60);
-    background: linear-gradient(135deg,#711613, #dc2424 50px);
-    border-radius: 10px;
-    cursor: pointer;
-}
-input[type=button]:hover{
-    background: linear-gradient(-105deg, #3a1624, #b90000 50px);
-    animation: bot 800ms;   
     animation-timing-function: ease-in-out;
-    animation-iteration-count:infinite;
-    animation-direction: alternate;
+    border-radius: 25px;
 }
 
-/*Keyframes para Animações*/
-@keyframes fade {
+@keyframes up{
     from{
         opacity: 0;
-        transform: scale(0.8);
+        transform:translateY(0);
+    }
+    50%{
+        opacity: 1;
     }
     to{
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-@keyframes move {
-    from{
         opacity: 0;
-        transform: translateX(-35%);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0%);
+        transform: translateY(-950px) rotate(860deg);
     }
 }
-@keyframes bot{
-    from{
-        transform: scale(1);
-    }
-    to{
-        transform: scale(1.05);
-    }
+
+// Animação fundo//
+const ulFundo = document.querySelector("ul.fundo");
+
+for(let e = 0; e < 1; e++){
+
+    const li = document.createElement("li");
+    const random =  (min, max) => Math.random() * (max - min) + min;
+      const size = Math.floor(random(10, 200));
+      const position = random(1, 99);
+        const delay = random(5, 0.1);  
+        const duration = random(24, 12);
+
+      li.style.width = `${size}px`;
+        li.style.height = `${size}px`;
+          li.style.bottom = `-${size}px`;
+            li.style.left = `${position}%`;
+              li.style.animationDelay = `${delay}s`
+              li.style.animationDuration = `${duration}s`
+              li.style,AnimationTimingFunction = `cubic-bazier(${Math.random()}, ${Math.random()}, ${Math.random()}, ${Math.random()})`    
+
+      ulFundo.appendChild(li);
 }

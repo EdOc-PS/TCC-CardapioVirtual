@@ -91,12 +91,13 @@ input[type=submit]{
     width: 35%;
     font-size: 20px;
     height: 45px;
-    background: linear-gradient(135deg, #6262db 60px, #711613);
+    background-color: #6262db;
     border-radius: 10px;
     cursor: pointer;
+    
 }
 input[type=submit]:hover{
-    background: linear-gradient(-105deg, #1e1eaa 60px, #3a1624); 
+    background-color: #2f2fad;
     animation: bot 800ms;   
     animation-timing-function: inherit;
     animation-iteration-count:infinite;
@@ -152,31 +153,4 @@ input[type=button]:hover{
         transform: scale(1.05);
     }
 }
-/*Animação para o fundo*/
-.fundo li{
-  
-    width: 40px;
-    height: 40px;
-    background: linear-gradient(90deg, rgba(113, 22, 19, 0.35), rgba(58, 22, 36, 0.35));
-    display: block;
-    position: absolute;
-    bottom: -40px;
-    animation: up 5s infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease-in-out;
-    border-radius: 25px;
-}
 
-@keyframes up{
-    from{
-        opacity: 0;
-        transform:translateY(0);
-    }
-    50%{
-        opacity: 1;
-    }
-    to{
-        opacity: 0;
-        transform: translateY(-950px) rotate(860deg);
-    }
-}
