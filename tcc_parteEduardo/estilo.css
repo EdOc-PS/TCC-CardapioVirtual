@@ -142,3 +142,10 @@ header nav a:hover{
   
 
 }
+h1{ 
+    background-color:rgb(221, 223, 224);
+    padding: 25px;
+    margin-left: 600px;
+    margin-right: 600px;
+    border-radius: 20px;
+}
