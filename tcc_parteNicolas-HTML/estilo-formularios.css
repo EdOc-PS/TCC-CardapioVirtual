@@ -11,7 +11,6 @@ body{
 .titulo{
     text-align: center;    
     font-weight: bold;
-    top: 135px;
     position: relative;
     color:whitesmoke;
     font-size: 50px;
@@ -31,11 +30,24 @@ body{
 }
 .divlink {
     animation: fade 1s;
+    top: 30px;
+    position: relative;
 }
 .divlink a {
     text-decoration: none;
     font-size: 22px;
     color: whitesmoke;
+    width: 100px;
+
+}
+.divlink a:hover{
+    background: white;
+    border-radius: 5px;
+    height: auto;
+    color: #3a1624;
+    transition: all .2s ease-in-out;
+    position: relative;
+    padding: 10px;
 }
 
 
@@ -81,48 +93,7 @@ input[type=text]{
 }
 input:focus{
     outline: none;
-    border-color: #3a1624;
 }
-
-input[type=submit]{
-    font-weight: bold;
-    border: 1px solid rgb(58, 56, 56);
-    color:whitesmoke;
-    width: 35%;
-    font-size: 20px;
-    height: 45px;
-    background-color: #6262db;
-    border-radius: 10px;
-    cursor: pointer;
-    
-}
-input[type=submit]:hover{
-    background-color: #2f2fad;
-    animation: bot 800ms;   
-    animation-timing-function: inherit;
-    animation-iteration-count:infinite;
-    animation-direction: alternate;
-}
-
-input[type=button]{
-    font-weight: bold;
-    border: 1px solid rgb(58, 56, 56);
-    color:whitesmoke;
-    width: 35%;
-    font-size: 20px;
-    height: 45px;;
-    background: linear-gradient(135deg,#711613, #e93d3d 50px);
-    border-radius: 10px;
-    cursor: pointer;
-}
-input[type=button]:hover{
-    background: linear-gradient(-105deg, #3a1624, #b90000 50px);
-    animation: bot 800ms;   
-    animation-timing-function:inherit;
-    animation-iteration-count:infinite;
-    animation-direction: alternate;
-}
-
 
 /*Keyframes para Animações*/
 @keyframes fade {

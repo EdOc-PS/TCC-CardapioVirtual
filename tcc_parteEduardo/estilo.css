@@ -136,16 +136,22 @@ header nav a:hover{
    
 }
 .escolha{
-    height: 30px;
+    height: 40px;
     width: 755px;
-    border-radius: 10px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 18px;
   
 
 }
 h1{ 
-    background-color:rgb(221, 223, 224);
-    padding: 25px;
-    margin-left: 600px;
-    margin-right: 600px;
-    border-radius: 20px;
+    color: rgb(71, 70, 70);
+    background-color:#dddfe0;
+    background: linear-gradient(800deg, #eceaea,#d8d9da,#eceaea);
+    padding: 13px;
+    margin-left: 620px;
+    margin-right: 620px;
+    border-radius: 15px;
+    border-bottom: 2px solid #aaaaaa;
+    border-top: 2px solid #aaaaaa;
 }
