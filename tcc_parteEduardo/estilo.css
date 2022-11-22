@@ -64,11 +64,6 @@ header nav a:hover{
 .carrinho{
     cursor: pointer;
     background: transparent;
-    width: 50px;
-    height: auto
-    
-    ;
-    border: none;
     -webkit-filter: invert(100%);
     filter: invert(100%);
 }
@@ -76,7 +71,7 @@ header nav a:hover{
     background: white;
     height: 55px;
     width: 60px;
-    border-radius: 6px;
+    border-radius: 8px;
 }
 .carrinho:hover{
     -webkit-filter: none;
@@ -132,8 +127,8 @@ header nav a:hover{
     background: white;
     height: 55px;
     width: 60px;
-    border-radius: 6px;
-   
+    border-radius: 8px;
+
 }
 .escolha{
     height: 40px;
