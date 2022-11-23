@@ -8,10 +8,7 @@ function escolher(valor){
         const bebidas = document.getElementById("bebidaTitulo");
         bebidas.scrollIntoView({behavior: "smooth"});
     }
-    if(valor.value=="sobremesa"){
-        const sobremesas = document.getElementById("sobremesaTitulo");
-        sobremesas.scrollIntoView({behavior: "smooth"});
-    }
+   
 }
 
 //carrinho
