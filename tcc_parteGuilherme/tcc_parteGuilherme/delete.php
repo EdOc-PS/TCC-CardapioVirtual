@@ -1,4 +1,5 @@
 <?php
+header("location: index.php");
 define('HOST', 'localhost');
 define('USER', 'root'); 
 define('PASSWORD', ''); 
@@ -9,6 +10,6 @@ try {
 }catch (mysqliException $error) {
 
 }
- $delete = "DELETE FROM carrinho WHERE Qtde_produto = 2";
+ $delete = "DELETE FROM carrinho WHERE id_produto = 0";
  $conn->query($delete);
 ?>

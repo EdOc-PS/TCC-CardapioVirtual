@@ -29,9 +29,10 @@
                 </thead>
                 <tbody>
                     <?php
-                    include("select.php");
+                    include("select.php");         
                     ?>
                 </tbody>
+                
             </table>
         </nav>
         <button class="menu-btn">

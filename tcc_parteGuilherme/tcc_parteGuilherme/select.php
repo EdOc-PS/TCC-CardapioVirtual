@@ -1,20 +1,20 @@
 <link rel="stylesheet" href="estilo.css">
 <?php                        
-                    define('HOST', 'localhost');
-                    define('USER', 'root'); 
-                    define('PASSWORD', ''); 
-                    define('DB', 'carrinho_bd'); 
+  define('HOST', 'localhost');
+  define('USER', 'root'); 
+  define('PASSWORD', ''); 
+  define('DB', 'carrinho_bd'); 
                    
-                   try { 
-                     $conn = new mysqli(HOST, USER, PASSWORD, DB);
-                    }catch (mysqliException $error) {
+  try { 
+  $conn = new mysqli(HOST, USER, PASSWORD, DB);
+  }catch (mysqliException $error) {
 
-                    }
+  }
        
-                   $select = "SELECT Nm_produto, Preco_produto, Qtde_produto, Nm_cliente, telefone_cliente, data_pedido FROM carrinho WHERE Nm_cliente='Cláudio'";
-                   $result = $conn->query($select); 
+  $select = "SELECT Nm_produto, Preco_produto, Nm_cliente, telefone_cliente, data_pedido, sum(Qtde_produto) Qtde_produto FROM carrinho WHERE Nm_cliente='Cláudio' GROUP BY Nm_produto, Preco_produto, Nm_cliente, telefone_cliente, data_pedido";
+  $result = $conn->query($select); 
                    
-                   if ($result->num_rows > 0) {
+  if ($result->num_rows > 0) {
                     while($row = $result->fetch_assoc()) {
                         
                         $Nm_cliente = $row["Nm_cliente"];
@@ -28,12 +28,20 @@
                             '<tr>'.                       
                             '<td>'.$Nm_produto.'</td>'.
                             '<td>'.$preco_produto.'</td>'.
-                            '<td>'.$qtde.'</td>'.
+                            '<td>
+                            <form action= "update.php" method="POST">
+                            
+                            <input type = number name=number_carrinho value ='.$qtde.'></input>
+                            
+                            </form>
+                            </td>'.
                             '<td>'.$total.'</td>'.
-                            '<td><a href="delete.php">Apagar</a></td>'.
-                            '<td>                               
-                            </td>
-                            ';                                          
+                            '<td>
+                             <form action="delete.php">'.
+                            '<button>Apagar</button></td>'.
+                            '</form>'.                              
+                            '</tr>
+                            ';                                                              
                     }
                   } else {
                     echo "Seu carrinho está vazio!";

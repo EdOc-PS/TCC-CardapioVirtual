@@ -1,4 +1,5 @@
 <?php
+    header("location: index.php");
     define('HOST', 'localhost');
     define('USER', 'root'); 
     define('PASSWORD', ''); 
@@ -15,14 +16,16 @@
     $preco = "19,90";
     $qtde = $_POST["Qtde_number"];
     
-    $sql = "INSERT INTO carrinho (Nm_cliente, telefone_cliente, Nm_produto, Preco_produto, Qtde_produto) VALUES ('".$nm_cliente."','".$telefone_cliente."','".$nome."', '".$preco."',  '".$qtde."')";
-    
-    if ($conn->query($sql) === TRUE) {
-    echo "<script>alert('Registro inserido com sucesso.');</script>";
-    echo "<script>window.location = 'lista.php';</script>";
-    } else {
-    echo "Erro: " . $sql . "<br>" . $conn->error;
-    echo "<script>window.history.back();</script>";
-    }
+    $select = "SELECT Nm_produto, Preco_produto, Nm_cliente, telefone_cliente, data_pedido, sum(Qtde_produto) Qtde_produto FROM carrinho WHERE Nm_cliente='Cláudio' GROUP BY Nm_produto, Preco_produto, Nm_cliente, telefone_cliente, data_pedido";
+    $result = $conn->query($select); 
+                   
+    if ($result->num_rows > 0) {
+
+    $atualizar = "UPDATE carrinho SET Qtde_produto = (Qtde_produto + '$qtde') WHERE Nm_produto='Misto quente'";
+    $conn->query($atualizar);
+    }else{
+     $inserir = "INSERT INTO carrinho (Nm_cliente, telefone_cliente, Nm_produto, Preco_produto, Qtde_produto) VALUES ('".$nm_cliente."','".$telefone_cliente."','".$nome."', '".$preco."',  '".$qtde."')";
+     $conn->query($inserir);
     $conn->close();
+    }
 ?>
