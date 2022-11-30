@@ -14,10 +14,51 @@ function escolher(valor) {
 //carrinho
 const btn = document.querySelector('.menu-btn');
 const nav = document.querySelector('nav');
+const fund = document.querySelector('.fundo');
+
+
 btn.onclick = function () {
     this.classList.toggle('active');
     nav.classList.toggle('active');
 }
+fund.onclick = function () {
+    this.classList.toggle('active');
+    nav.classList.toggle('active');
+}
+
+btn.addEventListener('click', () => {
+    if(fund.style.display == 'block'){
+        fund.style.display = 'none';
+        function unloadScrollBars() {
+            document.documentElement.style.overflow = 'auto';
+            document.documentElement.style.overflowX = 'hidden';
+            document.body.scroll = "no";
+        }
+        unloadScrollBars();
+    
+          
+    }else{
+        fund.style.display = 'block';
+    }
+    function unloadScrollBars() {
+        document.documentElement.style.overflow = 'hidden';
+        document.body.scroll = "no";
+    }
+    unloadScrollBars();
+})
+
+fund.addEventListener('click', event => {
+    const classClickedElement = event.target.classList[0];
+    if (classClickedElement === 'fundo' || classClickedElement === 'menu-btn') {
+        fund.style.display = 'none';
+        function unloadScrollBars() {
+            document.documentElement.style.overflow = 'auto';
+            document.documentElement.style.overflowX = 'hidden';
+            document.body.scroll = "no";
+        }
+        unloadScrollBars();
+    }
+})
 
 //add carrinho
 function proximo_item() {
