@@ -7,7 +7,9 @@
 body{
     text-align: center;
     overflow-x: hidden;
-
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 header{
@@ -25,8 +27,7 @@ header{
 }
 .classcabecalhomin{
     background: linear-gradient(800deg, #3a1624,#711613);
-    height:80px;
-    
+    height:80px; 
 }
 
 .logoimg{
@@ -137,7 +138,7 @@ header nav a:hover{
 }
 h1{ 
     color: rgb(71, 70, 70);
-    background-color:#dddfe0;
+    width: 35%;
     background: linear-gradient(800deg, #eceaea,#d8d9da,#eceaea);
     padding: 13px;
     margin-left: 620px;
@@ -147,13 +148,18 @@ h1{
     border-top: 2px solid #aaaaaa;
 }
 
+.container {
+    padding: 10px;
+  }
+
   .content {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 5px; 
   }
   .accordion_item {
     border-radius: 10px;
+    border: 1px solid #adabab;
   }
 
   .accordion_header {
