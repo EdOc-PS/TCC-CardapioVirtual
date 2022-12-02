@@ -13,26 +13,43 @@ function escolher(valor) {
 
 //carrinho
 const btn = document.querySelector('.menu-btn');
+const btnuser = document.querySelector('.user');
 const nav = document.querySelector('nav');
 const fund = document.querySelector('.fundo');
+const imgcart = document.querySelector('.fa-solid.fa-cart-arrow-down');
+const imguser = document.querySelector('.fa-solid.fa-user-plus');
 
 
 btn.onclick = function () {
     this.classList.toggle('active');
     nav.classList.toggle('active');
-}
-fund.onclick = function () {
-    this.classList.toggle('active');
-    nav.classList.toggle('active');
+   
+    if (imgcart.classList.contains("fa-cart-arrow-down")) { 
+        imgcart.classList.remove("fa-cart-arrow-down"); 
+        imgcart.classList.add("fa-circle-xmark"); 
+        imguser.classList.remove("fa-user-plus"); 
+        btnuser.classList.remove("user");
+        btnuser.classList.add("user2");
+      } 
+    else { 
+        imgcart.classList.remove("fa-circle-xmark"); 
+        imgcart.classList.add("fa-cart-arrow-down");
+        btnuser.classList.remove("user2");
+        btnuser.classList.add("user");  
+        imguser.classList.add("fa-user-plus")
+      }
+
 }
 
 btn.addEventListener('click', () => {
+  
     if(fund.style.display == 'block'){
         fund.style.display = 'none';
         function unloadScrollBars() {
             document.documentElement.style.overflow = 'auto';
             document.documentElement.style.overflowX = 'hidden';
             document.body.scroll = "no";
+         
         }
         unloadScrollBars();
     
@@ -45,19 +62,6 @@ btn.addEventListener('click', () => {
         document.body.scroll = "no";
     }
     unloadScrollBars();
-})
-
-fund.addEventListener('click', event => {
-    const classClickedElement = event.target.classList[0];
-    if (classClickedElement === 'fundo' || classClickedElement === 'menu-btn') {
-        fund.style.display = 'none';
-        function unloadScrollBars() {
-            document.documentElement.style.overflow = 'auto';
-            document.documentElement.style.overflowX = 'hidden';
-            document.body.scroll = "no";
-        }
-        unloadScrollBars();
-    }
 })
 
 //add carrinho

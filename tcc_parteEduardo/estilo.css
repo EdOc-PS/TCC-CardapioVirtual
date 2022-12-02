@@ -19,6 +19,41 @@ header{
     align-items: center;  
     position: fixed;
     top: 0%;
+    font-size: 20px;
+    padding: 0px 50px;
+}
+
+header nav{
+    position: absolute;
+    background: linear-gradient(35deg, #3a1624, #701512);
+    width: 30%;
+    top: 100%;
+    right: -100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+header nav.active{
+    right: 0;
+}
+header nav .cardiv{
+    margin-bottom: 150px;
+    background: rgb(241, 239, 239);
+    border-radius: 20px;
+    height: 80vh;
+    width: 25vw;
+    border: 3px solid #adabab;
+
+}
+
+.headerUL{
+cursor: default;
+word-spacing: 50px;
+}
+.headerLI{
+display: inline-block; 
 }
 
 .classcabecalho{
@@ -47,75 +82,30 @@ header{
     border-radius: 13px;
 }
 
-header nav a{
-    color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-}
-header nav a:hover{
-    background: #fff;
-    color: #711613;
-}
+
+
 .menu-btn{
     cursor: pointer;
     background: transparent;
-    width: 50px;
     height: auto;
     border: none;
+
 }
 .carrinho{
     cursor: pointer;
-    background: transparent;
-    -webkit-filter: invert(100%);
-    filter: invert(100%);
+    color: white;
 }
 .menu-btn:hover{
     background: white;
     height: 55px;
     width: 60px;
-    border-radius: 8px;
+    border-radius: 10px;
+   
 }
 .carrinho:hover{
-    -webkit-filter: none;
-    filter: none;
+    color: #711613;
+ 
 }
-
-    header
-    {
-        font-size: 20px;
-        padding: 0px 50px;
-    }
-    header nav{
-        position: absolute;
-        background: #711613;
-        width: 30%;
-        top: 100%;
-        right: -100%;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        border-bottom-left-radius: 45px;
-    }
-    header nav.active{
-        right: 0;
-    }
-    header nav a{
-        font-size: 2em;
-        margin: 5px;
-    }
-
-.headerUL{
-    word-spacing: 50px;
-}
-.headerLI{
-    display: inline-block; 
-}
-.headerUL .headerLI a{
-    color: black;   
-}
-
 .user{
     cursor: pointer;
     background: transparent;
@@ -123,12 +113,16 @@ header nav a:hover{
     height: auto;
     border: none;
 }
+.user2{
+    opacity:0 ;
+}
 .user:hover{
     background: white;
     height: 55px;
     width: 60px;
-    border-radius: 8px;
+    border-radius: 10px;
 }
+   
 .escolha{
     height: 40px;
     width: 755px;
@@ -137,7 +131,7 @@ header nav a:hover{
     font-size: 18px;
 }
 h1{ 
-    color: rgb(71, 70, 70);
+    color: #474646;
     width: 35%;
     background: linear-gradient(800deg, #eceaea,#d8d9da,#eceaea);
     padding: 13px;
@@ -163,6 +157,7 @@ h1{
   }
 
   .accordion_header {
+    color: #474646;
     padding: 15px;
     cursor: pointer;
     display: flex;
@@ -187,7 +182,7 @@ h1{
   }
 
 .fundo {
-    background: rgba(0,0,0,.5);
+    background: rgba(0,0,0,.8);
     position: fixed;
     top: 0;
     left: 0;
