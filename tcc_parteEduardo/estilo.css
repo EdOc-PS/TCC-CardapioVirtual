@@ -22,60 +22,49 @@ header{
     font-size: 20px;
     padding: 0px 50px;
 }
-
-header nav{
-    position: absolute;
-    background: linear-gradient(35deg, #3a1624, #701512);
-    width: 30%;
-    top: 100%;
-    right: -100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-header nav.active{
-    right: 0;
-}
-header nav .cardiv{
-    margin-bottom: 150px;
-    background: rgb(241, 239, 239);
-    border-radius: 20px;
-    height: 80vh;
-    width: 25vw;
-    border: 3px solid #adabab;
-
-}
-
-.headerUL{
-cursor: default;
-word-spacing: 50px;
-}
-.headerLI{
-display: inline-block; 
-}
-
-.classcabecalho{
-    height:120px; 
-    background: linear-gradient(800deg, #3a1624, #711613);
-}
-.classcabecalhomin{
-    background: linear-gradient(800deg, #3a1624,#711613);
-    height:80px; 
-}
+    header nav{
+        position: absolute;
+        background: linear-gradient(35deg, #3a1624, #701512);
+        width: 30%;
+        top: 100%;
+        right: -100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;     
+    }
+    header nav.active{
+        right: 0;
+    }
+    header nav .cardiv{
+        margin-bottom: 150px;
+        background: rgb(241, 239, 239);
+        border-radius: 20px;
+        height: 80vh;
+        width: 25vw;
+        border: 3px solid #adabab;
+    }
+    .headerUL{
+        cursor: default;
+        word-spacing: 50px;
+    }
+    .headerLI{
+        display: inline-block; 
+    }
+   .classcabecalho{
+        height:120px; 
+        background: linear-gradient(800deg, #3a1624, #711613);
+    }
+    .classcabecalhomin{
+        background: linear-gradient(800deg, #3a1624,#711613);
+        height:80px; 
+    }
 
 .logoimg{
     height: 115px;
     width: 120px; 
 }
-
-.car{
-    background-color: rgb(78, 78, 78);
-    height: 30px;
-    font-family: sans-serif;
-}
-
 .im2{ 
     width: 130px;
     height: 100px;
@@ -87,9 +76,7 @@ display: inline-block;
 .menu-btn{
     cursor: pointer;
     background: transparent;
-    height: auto;
     border: none;
-
 }
 .carrinho{
     cursor: pointer;
@@ -100,21 +87,18 @@ display: inline-block;
     height: 55px;
     width: 60px;
     border-radius: 10px;
-   
 }
 .carrinho:hover{
     color: #711613;
- 
 }
 .user{
-    cursor: pointer;
     background: transparent;
-    width: 50px;
-    height: auto;
     border: none;
 }
 .user2{
-    opacity:0 ;
+    opacity: 0;
+    background: transparent;
+    border: none;   
 }
 .user:hover{
     background: white;
@@ -182,11 +166,24 @@ h1{
   }
 
 .fundo {
-    background: rgba(0,0,0,.8);
+    animation: fundo 400ms;
+    background: rgba(0,0,0,.7);
     position: fixed;
     top: 0;
     left: 0;
     width: 70%;
     height: 100%;
     display: none;
+}
+
+/*Keyframes para Animações*/
+@keyframes fundo {
+    from{
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0%);
+    }
 }

@@ -24,36 +24,31 @@ btn.onclick = function () {
     this.classList.toggle('active');
     nav.classList.toggle('active');
    
-    if (imgcart.classList.contains("fa-cart-arrow-down")) { 
-        imgcart.classList.remove("fa-cart-arrow-down"); 
-        imgcart.classList.add("fa-circle-xmark"); 
-        imguser.classList.remove("fa-user-plus"); 
-        btnuser.classList.remove("user");
+    if (imgcart.classList.contains("fa-cart-arrow-down")) {
+        btnuser.classList.remove("user"); 
         btnuser.classList.add("user2");
+          imgcart.classList.remove("fa-cart-arrow-down"); 
+          imgcart.classList.add("fa-circle-xmark"); 
+            imguser.classList.remove("fa-user-plus"); 
+           
       } 
     else { 
         imgcart.classList.remove("fa-circle-xmark"); 
         imgcart.classList.add("fa-cart-arrow-down");
-        btnuser.classList.remove("user2");
-        btnuser.classList.add("user");  
-        imguser.classList.add("fa-user-plus")
+          imguser.classList.add("fa-user-plus");
+            btnuser.classList.remove("user2");
+            btnuser.classList.add("user");    
       }
-
 }
-
 btn.addEventListener('click', () => {
-  
     if(fund.style.display == 'block'){
         fund.style.display = 'none';
         function unloadScrollBars() {
             document.documentElement.style.overflow = 'auto';
             document.documentElement.style.overflowX = 'hidden';
             document.body.scroll = "no";
-         
         }
-        unloadScrollBars();
-    
-          
+        unloadScrollBars();    
     }else{
         fund.style.display = 'block';
     }
