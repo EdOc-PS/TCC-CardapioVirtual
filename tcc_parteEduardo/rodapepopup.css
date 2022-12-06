@@ -24,7 +24,7 @@ footer{
     display: flex;
     justify-content: space-between;
     border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px ;
+    border-top-right-radius: 10px ;
 }
 footer .caixa {
     width: 500px;

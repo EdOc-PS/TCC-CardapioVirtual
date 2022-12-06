@@ -48,6 +48,7 @@ header{
     .headerUL{
         cursor: default;
         word-spacing: 50px;
+       
     }
     .headerLI{
         display: inline-block; 
@@ -71,8 +72,6 @@ header{
     border-radius: 13px;
 }
 
-
-
 .menu-btn{
     cursor: pointer;
     background: transparent;
@@ -86,7 +85,7 @@ header{
     background: white;
     height: 55px;
     width: 60px;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 .carrinho:hover{
     color: #711613;

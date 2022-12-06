@@ -30,7 +30,7 @@ btn.onclick = function () {
           imgcart.classList.remove("fa-cart-arrow-down"); 
           imgcart.classList.add("fa-circle-xmark"); 
             imguser.classList.remove("fa-user-plus"); 
-           
+           /*subir botão com o click*/
       } 
     else { 
         imgcart.classList.remove("fa-circle-xmark"); 
