@@ -24,7 +24,7 @@ header{
 }
     header nav{
         position: absolute;
-        background: linear-gradient(35deg, #3a1624, #701512);
+        background: linear-gradient(35deg, #3a1624, #741413);
         width: 30%;
         top: 100%;
         right: -100%;
@@ -55,10 +55,10 @@ header{
     }
    .classcabecalho{
         height:120px; 
-        background: linear-gradient(800deg, #3a1624, #711613);
+        background: linear-gradient(800deg, #3a1624, #741413);
     }
     .classcabecalhomin{
-        background: linear-gradient(800deg, #3a1624,#711613);
+        background: linear-gradient(800deg, #3a1624,#741413);
         height:80px; 
     }
 
@@ -91,7 +91,7 @@ header{
     border-radius: 8px;
 }
 .carrinho:hover{
-    color: #711613;
+    color: #741413;
 }
 .user{
     background: transparent;
@@ -118,36 +118,48 @@ header{
     text-align: center;
     font-size: 18px;
 }
-h1{ 
+.titulo{ 
     color: #474646;
     width: 35%;
-    background: linear-gradient(800deg, #eceaea,#d8d9da,#eceaea);
+    background: #fff;
     padding: 13px;
-    margin-left: 620px;
-    margin-right: 620px;
-    border-radius: 15px;
-    border-bottom: 2px solid #aaaaaa;
-    border-top: 2px solid #aaaaaa;
+    border-bottom: 5px solid #aaaaaa; 
+   
 }
 
 .container {
-  box-shadow: 0px 5px 10px #0003; 
-  background-color: #ebf2f2;
+  box-shadow: 0px 3px 13px #3f0c0b; 
+  background: #9c5d5b;
   border-radius: 15px;
   padding: 30px;
+  width: 55vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  }
+.container2 {
+  box-shadow: 0px 5px 13px #3f0c0b; 
+  background: #9c5d5b;
+  border-radius: 15px;
+  padding: 30px;
+  width: 55vw;
+  height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
   }
 
   .content {
     display: flex;
     flex-direction: column;
-    gap: 5px; 
+    gap: 2px; 
   }
   .accordion_item {
-    width: 70%;
+    width: 47vw;
     border-radius: 10px;
-    
   }
-
   .accordion_header {
     color: #474646;
     padding: 15px;
@@ -163,14 +175,15 @@ h1{
     transition: all .5s ease;
     font-size: 14px;
   } 
- 
   span, .icon {
     font-weight: 600;
   } 
   p {
     text-align: justify;
   }
-
+.activeacc {
+    padding-bottom: 10px;
+  }
 .fundo {
     animation: fundo 400ms;
     background: rgba(0,0,0,.7);

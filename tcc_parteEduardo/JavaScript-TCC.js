@@ -140,7 +140,7 @@ accordion_item.forEach((item) => {
     accordion_header_item.addEventListener("click", () => {
         const accordion_content_item = item.querySelector(".accordion_content");
 
-        const item_actived = document.querySelector(".active");
+        const item_actived = document.querySelector(".activeacc");
 
         VerifyActive(item, accordion_content_item, item_actived);
     });
@@ -154,12 +154,12 @@ function VerifyActive(item, content, content_actived) {
 
     if (content_actived) {
         content_actived.style.height = 0;
-        content_actived.classList.remove("active");
+        content_actived.classList.remove("activeacc");
     }
 
     if (content !== content_actived) {
         icon_item.innerHTML = "-";
-        content.classList.add("active");
+        content.classList.add("activeacc");
         content.style.height = content.scrollHeight + 10 + "px";
     }
 }
