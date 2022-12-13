@@ -36,6 +36,7 @@ header{
     }
     header nav.active{
         right: 0;
+        transition: 80ms ease-out;
     }
     header nav .cardiv{
         margin-bottom: 150px;
@@ -199,10 +200,11 @@ header{
 @keyframes fundo {
     from{
         opacity: 0;
-        transform: translateX(-50%);
+        
     }
     to{
         opacity: 1;
-        transform: translateX(0%);
+     
     }
 }
+
