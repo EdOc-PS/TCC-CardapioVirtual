@@ -59,33 +59,33 @@ header{
         background: linear-gradient(800deg, #3a1624, #741413);
     }
     .classcabecalhomin{
+        transition: .6s ease;
         background: linear-gradient(800deg, #3a1624,#741413);
         height:80px; 
     }
+    .logoimg{
+        height: 115px;
+        width: 120px; 
+    }
 
-.logoimg{
-    height: 115px;
-    width: 120px; 
-}
 .im2{ 
     width: 130px;
     height: 100px;
     border-radius: 13px;
 }
-
-.menu-btn{
+.menu-btn{ 
     cursor: pointer;
     background: transparent;
     border: none;
     width: 50px;
     height: auto;
-   
 }
 .carrinho{
     cursor: pointer;
     color: white;
 }
 .menu-btn:hover{
+    transition: .2s linear; 
     background: white;
     height: 55px;
     width: 60px;
@@ -106,6 +106,7 @@ header{
     border: none;   
 }
 .user:hover{
+    transition: .2s linear; 
     background: white;
     height: 55px;
     width: 60px;
@@ -119,19 +120,35 @@ header{
     text-align: center;
     font-size: 18px;
 }
-.titulo{ 
-    color: #474646;
-    width: 35%;
-    background: #fff;
-    padding: 13px;
-    border-bottom: 5px solid #aaaaaa; 
-   
-}
+
+  .blog-title:before,
+  .blog-title:after {
+    background-color:#adabab;
+    content: "";
+    display: inline-block;
+    height: 4px;
+    border-radius: 15px;
+    vertical-align: middle;
+    border: 0.5px solid #acaaaa;
+    width: 150%;
+  }
+  .blog-title:before {
+    right: .5em;
+    margin-left: -350%;
+  }
+  .blog-title:after {
+    left: .5em;
+    margin-right: -350%;
+  }
+  h1{
+      padding: 30px;
+      color:#6e6e6e;
+  }
 
 .container {
   box-shadow: 0px 3px 13px #3f0c0b; 
   background: #9c5d5b;
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 30px;
   width: 55vw;
   display: flex;
@@ -142,7 +159,7 @@ header{
 .container2 {
   box-shadow: 0px 5px 13px #3f0c0b; 
   background: #9c5d5b;
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 30px;
   width: 55vw;
   height: 35vh;
@@ -151,7 +168,6 @@ header{
   justify-content: center;
   align-items: center;
   }
-
   .content {
     display: flex;
     flex-direction: column;

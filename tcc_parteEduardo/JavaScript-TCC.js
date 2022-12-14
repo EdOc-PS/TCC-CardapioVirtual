@@ -94,6 +94,7 @@ function diminuirHeader() {
         header.classList.add("classcabecalhomin");
         logoimg.style.width = "65px";
         logoimg.style.height = "62.5px";
+        logoimg.style.transition = ".7s";  
 
 
     } else if (window.pageYOffset == 0 && header.classList.contains("classcabecalhomin")) {
@@ -101,6 +102,7 @@ function diminuirHeader() {
         header.classList.remove("classcabecalhomin");
         logoimg.style.width = "120px";
         logoimg.style.height = "115px";
+        logoimg.style.transition = ".35s";  
     }
 }
 
