@@ -1,26 +1,21 @@
 body{
     background: linear-gradient(90deg, #711613, #3a1624);
     overflow: hidden;
-
-}
-.img{
-    display: flex;
-    justify-content: center;
-    margin-top: 13%;
-}
-img{
-    height: auto;
-    width: 15vw;
- 
-}
-.conteiner{  
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 5%;
-    position: relative; 
+}
+.img{
+    animation: fade 1s;
+    margin-top: 250px;
+}
+img{
+    width: 220px;
+}
+.conteiner{  
+    animation: fade 1s;
+    margin-top: 5vw;
 }
 .cadastro{
     cursor: pointer;
@@ -29,7 +24,24 @@ img{
     background: white;
     border-radius: 5px;
     height: auto;
-    width: 35%;
+    width: 40vw;
     color: #3a1624;
     padding: 15px;
+}
+@keyframes fade {
+    from{
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to{ 
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media(max-width: 1080px)
+{
+   .cadastro{
+       width: 80%;
+   }
 }
