@@ -1,0 +1,35 @@
+body{
+    background: linear-gradient(90deg, #711613, #3a1624);
+    overflow: hidden;
+
+}
+.img{
+    display: flex;
+    justify-content: center;
+    margin-top: 13%;
+}
+img{
+    height: auto;
+    width: 15vw;
+ 
+}
+.conteiner{  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 5%;
+    position: relative; 
+}
+.cadastro{
+    cursor: pointer;
+    font-size: larger;
+    border: none;
+    background: white;
+    border-radius: 5px;
+    height: auto;
+    width: 35%;
+    color: #3a1624;
+    padding: 15px;
+}
