@@ -1,17 +1,4 @@
-//clicar na posição
-function escolher(valor) {
-    if (valor.value == "lanche") {
-        const lanches = document.getElementById("lancheTitulo");
-        lanches.scrollIntoView({ behavior: "smooth" });
-    }
-    if (valor.value == "bebida") {
-        const bebidas = document.getElementById("bebidaTitulo");
-        bebidas.scrollIntoView({ behavior: "smooth" });
-    }
-
-}
-
-//carrinho
+//entrando no carrinho
 const btn = document.querySelector('.menu-btn');
 const btnuser = document.querySelector('.user');
 const nav = document.querySelector('nav');
@@ -200,6 +187,7 @@ class Produto {
     }
 }
 var produto = new Produto();
+
 //cabecalho
 const header = document.querySelector("header");
 const logoimg = document.querySelector(".logoimg");
@@ -212,7 +200,6 @@ function diminuirHeader() {
         header.classList.add("classcabecalhomin");
         logoimg.style.width = "65px";
         logoimg.style.height = "62.5px";
-        logoimg.style.transition = ".7s";  
 
 
     } else if (window.pageYOffset == 0 && header.classList.contains("classcabecalhomin")) {
@@ -220,14 +207,13 @@ function diminuirHeader() {
         header.classList.remove("classcabecalhomin");
         logoimg.style.width = "120px";
         logoimg.style.height = "115px";
-        logoimg.style.transition = ".35s";  
     }
 }
 
 //popups
 const popdiv = document.querySelector('.popup-link');
 const popup = document.querySelector('.popup-fundo');
-const infe = document.querySelector('.fa-square-xmark');
+
 
 popdiv.addEventListener('click', () => {
     popup.style.display = 'block';
@@ -240,7 +226,7 @@ popdiv.addEventListener('click', () => {
 
 popup.addEventListener('click', event => {
     const classClickedElement = event.target.classList[0];
-    if (classClickedElement === 'popup-fechar' || classClickedElement === 'popup-fundo' ) {
+    if (classClickedElement === 'popup-fechar' || classClickedElement === 'popup-fundo') {
         popup.style.display = 'none'
         function unloadScrollBars() {
             document.documentElement.style.overflow = 'auto';
@@ -260,7 +246,7 @@ accordion_item.forEach((item) => {
     accordion_header_item.addEventListener("click", () => {
         const accordion_content_item = item.querySelector(".accordion_content");
 
-        const item_actived = document.querySelector(".activeacc");
+        const item_actived = document.querySelector(".active");
 
         VerifyActive(item, accordion_content_item, item_actived);
     });
@@ -274,12 +260,14 @@ function VerifyActive(item, content, content_actived) {
 
     if (content_actived) {
         content_actived.style.height = 0;
-        content_actived.classList.remove("activeacc");
+        content_actived.classList.remove("active");
     }
 
     if (content !== content_actived) {
         icon_item.innerHTML = "-";
-        content.classList.add("activeacc");
+        content.classList.add("active");
         content.style.height = content.scrollHeight + 10 + "px";
     }
 }
+
+

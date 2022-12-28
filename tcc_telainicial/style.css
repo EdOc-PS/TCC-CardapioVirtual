@@ -5,6 +5,7 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
+
 }
 .img{
     animation: fade 1s;
@@ -12,9 +13,11 @@ body{
 }
 img{
     width: 220px;
+    margin: auto;
 }
 .conteiner{  
-    margin-top: 5vw;
+    margin-top: 10vh
+
 }
 .cadastro{
     cursor: pointer;

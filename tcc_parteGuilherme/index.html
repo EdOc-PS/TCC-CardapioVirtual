@@ -6,16 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TCC</title>
-  <link rel="stylesheet" href="estilo.css">
-  <link rel="stylesheet" href="rodapepopup.css">
+  <link rel="stylesheet" href="estilo_Guilherme.css">
+  <link rel="stylesheet" href="rodapepopup_Guilherme.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 
 <body>
-  <header class="classcabecalho"> <img src="img/logo3.png" class="logoimg">
+  <header class="classcabecalho"> <img src="img_Guilherme/logo3.png" class="logoimg">
     <nav>
       <div class="cardiv">
-        <p class="textoTabela" hidden>Seu carrinho está vazinho! :(</p>
+        <p class="textoTabela" hidden>Seu carrinho está vazinho =(</p>
           <div class="divCarrinho" hidden>
             <table class="tabela" border="1">
               <th class="thCarrinho" colspan="2">Item</th>
@@ -25,14 +25,14 @@
               <th class="thCarrinho">Apagar</th>
               <tbody class="tbody"></tbody>
             </table>
-           <button class="buttonCarrinho">Finalizar compra</button> 
+           <button class="buttonCarrinho"><a href="conferePedido.html">Finalizar compra</a>  </button> 
           </div>
       </div>
     </nav>
-    </nav>
     <ul class="headerUL">
       <li class="headerLI"><button class="user"><i class="fa-solid fa-user-plus carrinho fa-3x"></i> </button></li>
-      <li class="headerLI"> <button class="menu-btn"><i class="fa-solid fa-cart-arrow-down carrinho fa-3x"></i></button></li>
+      <li class="headerLI"><button class="menu-btn"><i class="fa-solid fa-cart-arrow-down carrinho fa-3x"></i></button>
+      </li>
     </ul>
   </header>
 
@@ -45,14 +45,12 @@
 
   <br><br><br><br><br><br>
 
-  <h1 id="bebidaTitulo" class="blog-title"> Bebidas </h1>
+  <h1 id="bebidaTitulo">Bebidas</h1>
   <br>
-  
   <!--Accordion-->
-  
-  <div class="container">
+  <div class="container" style="width: 50%;">
     <div class="content">
-      <div class="accordion_item" style="background-color: #fafdff;">
+      <div class="accordion_item" style="background-color: #ba7474;">
         <div class="accordion_header">
           <span>
             Filtrados
@@ -61,23 +59,18 @@
             +
           </div>
         </div>
+
         <div class="accordion_content">
           <p>
           <div class="d1">
             <button class=popup-link>
-              <table class="tabela-compra" border="0">
-                <tr>
-                  <td style="width: 100px "> <img src="img/pao.jpg" class="im2"></td>
-                  <th style="width: 150px" class="nomeTable">Nome</th>
-                  <td style="width: 80px" class="precoTable">Preço</td>
-                </tr>
-              </table>
+              <!-- <img class="im2" src="img/pao.jpg">--> fdfadsf Link qualquer
             </button>
           </div>
           </p>
         </div>
       </div>
-      <div class="accordion_item" style="background-color: #fafdff">
+      <div class="accordion_item" style="background-color: #d8d9da">
         <div class="accordion_header">
           <span>
             Miseráveis
@@ -91,7 +84,7 @@
         </div>
       </div>
 
-      <div class="accordion_item" style="background-color: #fafdff;">
+      <div class="accordion_item" style="background-color: #ba7474;">
         <div class="accordion_header">
           <span>
             Espresso
@@ -102,9 +95,9 @@
         </div>
         <div class="accordion_content">
         </div>
- 
+
       </div>
-      <div class="accordion_item" style="background-color:  #fafdff;">
+      <div class="accordion_item" style="background-color:  #d8d9da;">
         <div class="accordion_header">
           <span>
             Cappuciono
@@ -115,9 +108,9 @@
         </div>
         <div class="accordion_content">
         </div>
- 
+
       </div>
-      <div class="accordion_item" style="background-color: #fafdff;">
+      <div class="accordion_item" style="background-color: #ba7474;">
         <div class="accordion_header">
           <span>
             Cafés & Chás
@@ -128,9 +121,9 @@
         </div>
         <div class="accordion_content">
         </div>
- 
+
       </div>
-      <div class="accordion_item" style="background-color:  #fafdff">
+      <div class="accordion_item" style="background-color:  #d8d9da">
         <div class="accordion_header">
           <span>
             Smoothie & Frappé
@@ -141,9 +134,9 @@
         </div>
         <div class="accordion_content">
         </div>
- 
+
       </div>
-      <div class="accordion_item" style="background-color: #fafdff;">
+      <div class="accordion_item" style="background-color: #ba7474;">
         <div class="accordion_header">
           <span>
             Chocolate
@@ -154,10 +147,10 @@
         </div>
         <div class="accordion_content">
         </div>
- 
+
       </div>
-      
-      <div class="accordion_item" style="background-color: #fafdff;">
+
+      <div class="accordion_item" style="background-color: #d8d9da;">
         <div class="accordion_header">
           <span>
             Sucos e Refrigerantes
@@ -168,9 +161,9 @@
         </div>
         <div class="accordion_content">
         </div>
- 
+
       </div>
-      <div class="accordion_item" style="background-color: #fafdff;">
+      <div class="accordion_item" style="background-color: #ba7474;">
         <div class="accordion_header">
           <span>
             Cervejas
@@ -181,9 +174,9 @@
         </div>
         <div class="accordion_content">
         </div>
- 
-      </div>  
-      <div class="accordion_item" style="background-color: #fafdff;">
+
+      </div>
+      <div class="accordion_item" style="background-color: #d8d9da;">
         <div class="accordion_header">
           <span>
             Drinks
@@ -194,7 +187,7 @@
         </div>
         <div class="accordion_content">
         </div>
- 
+
       </div>
     </div>
   </div>
@@ -202,38 +195,26 @@
   <br><br>
   <div class="popup-fundo">
     <div class="popup">
-
-      <div class="popupbranco">
-        <div class="popup-fechar"><i class="fa-solid fa-square-xmark fa-2x"></i></div>
-          <div class="popup-content">
-            <table class = "popup-tabela" border = 0>
-              <tr class="popuptd">
-               <td> <img class="popup-tabimg" src="img/pao.jpg" alt="">  </td>
-              </tr>
-             <tr class="popuptr">
-                <th>Titulo</th>
-              </tr>
-               <tr class="popuptr">
-                <td><p> Descrição</p></td>
-              </tr>
-               <tr class="popuptr">
-                <td> <button class="popup-addbot" onclick="produto.salvar()"> Adicionar ao carrinho </button></td>
-              </tr>
-            </table>
-           
-          </div>
-       </div>
-
-     </div>
+      <div class="popup-fechar"> X </div>
+      <div class="popup-content">
+        <div id="Img_Lanche">
+          <img class=imgp style="width: 80%; border-radius: 15px;" src="misto.jpg">
+        </div>
+        <input type="button" value="Adicionar ao carrinho" onclick="produto.salvar()">
+      </div>
+    </div>
   </div>
 
-  <h1 id="lancheTitulo" class="blog-title"> Lanches </h1>
-  
+  <div class="fundo"> </div>
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <h1 id="lancheTitulo">Lanches</h1>
   <br>
-   <!--Accordion-->
-  <div class="container2">
+  <!--Accordion-->
+  <div class="container" style="width: 50%;">
     <div class="content">
-      <div class="accordion_item" style="background-color: #fafdff;">
+      <div class="accordion_item" style="background-color: #bf9898;">
         <div class="accordion_header">
           <span>
             Quiches
@@ -244,10 +225,10 @@
         </div>
 
         <div class="accordion_content">
-         
+
         </div>
       </div>
-      <div class="accordion_item" style="background-color: #fafdff;">
+      <div class="accordion_item" style="background-color: #d8d9da;">
         <div class="accordion_header">
           <span>
             Folhados
@@ -258,10 +239,10 @@
         </div>
 
         <div class="accordion_content">
-         
+
         </div>
       </div>
-      <div class="accordion_item" style="background-color: #fafdff;">
+      <div class="accordion_item" style="background-color: #bf9898;">
         <div class="accordion_header">
           <span>
             Pão de Queijo
@@ -271,10 +252,10 @@
           </div>
         </div>
         <div class="accordion_content">
-          
+
         </div>
       </div>
-      <div class="accordion_item" style="background-color: #fafdff;">
+      <div class="accordion_item" style="background-color: #d8d9da;">
         <div class="accordion_header">
           <span>
             Sanduiches & Omeletes
@@ -285,9 +266,9 @@
         </div>
         <div class="accordion_content">
         </div>
- 
+
       </div>
-      <div class="accordion_item" style="background-color: #fafdff;">
+      <div class="accordion_item" style="background-color: #ba7474;">
         <div class="accordion_header">
           <span>
             Doces
@@ -298,12 +279,11 @@
         </div>
         <div class="accordion_content">
         </div>
- 
+
       </div>
     </div>
   </div>
-
-  <br><br>
+  <br>
 
   <!-- Rodapé-->
   <footer>
@@ -334,8 +314,7 @@
     </div>
   </div>
 
-  <div class="fundo"></div>
-  <script src="./JavaScript-TCC.js"></script>
+  <script src="carrinho_js.js"></script>
 </body>
 
 </html>

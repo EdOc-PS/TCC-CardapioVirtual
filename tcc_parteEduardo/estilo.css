@@ -24,8 +24,8 @@ header{
 }
     header nav{
         position: absolute;
-        background: linear-gradient(35deg, #3a1624, #741413);
-        width: 30%;
+        background: linear-gradient(40deg, #3a1624, #741413);
+        width: 40%;
         top: 100%;
         right: -100%;
         height: 100vh;
@@ -38,18 +38,72 @@ header{
         right: 0;
         transition: 80ms ease-out;
     }
-    header nav .cardiv{
-        margin-bottom: 150px;
-        background: rgb(241, 239, 239);
-        border-radius: 15px;
-        height: 80vh;
-        width: 25vw;
-        border: 3px solid #adabab;
-    }
+    header nav .cardiv {
+      margin-bottom: 150px;
+      background: rgb(241, 239, 239);
+      border-radius: 15px;
+      height: 80vh;
+      width: 30vw;
+      border: 3px solid #adabab;
+  }
+     .cardiv2 {
+      margin-bottom: 150px;
+      background: rgb(241, 239, 239);
+      border-radius: 15px;
+      height: 80vh;
+      width: auto;
+      border: 3px solid #adabab;
+  }
+     /** Carrinho-Tabela **/ 
+     .inputQtde {
+      width:30px;
+      height: 20px;
+      text-align: center;
+      border: 2px solid #adabab;
+      border-left: none;
+      border-right: none;
+  }
+    .buttonqQtdeCarrinho {
+      width: 30px;
+      height: 20px;
+      background-color: transparent;
+      border: 2px solid #adabab;
+  }
+    .tabela{
+      border: 3px solid #adabab;
+      border-collapse: collapse;
+  }
+    .thCarrinho{ 
+      padding: 0px 10px;
+  }
+    .imgCarrinho{
+      margin: 2px;
+      width: 50px;
+      height: 50px;
+  }
+    .buttonCarrinho{
+      color: #474646;
+      font-size: 20px;
+      font-weight: bold;
+      width: 450px;
+      height: 50px;
+      border: 3px solid linear-gradient(40deg, #3a1624, #741413);;
+      border-radius: 5px;
+      position: relative;
+      top: 63vh;
+     
+  }
+    .buttonCarrinho:hover{
+      background: linear-gradient(40deg, #3a1624, #741413);
+      color: white;
+      opacity: 0.9;
+
+  }
+  /***/
+
     .headerUL{
         cursor: default;
-        word-spacing: 50px;
-       
+        word-spacing: 50px; 
     }
     .headerLI{
         display: inline-block; 
@@ -69,30 +123,16 @@ header{
     }
 
 .im2{ 
-    position: relative;
-    width: 105px;
-    height: 75px;
-    margin-top: 15px;
-    margin-right: 170px;
-    border-radius: 13px;
+    width: 110px;
+    height: 80px;
+    border-radius: 10px;
 }
-.T{
-  font-weight: bold;
-  top: -75px;
-  position: relative;
-  margin-right: 20px;
-}
-.T2{
-  margin-left: 120px;
-  position: relative;
-  top: -70px;
-  word-break: break-all;
-  width: 100px;
-}
-.T3{
-  position: relative;
-  top: -80px;
-  margin-left: 240px;
+.tabela-compra{
+  text-align: left;
+  margin-left: 5px;
+  margin-top: -10px;
+  width: 280px;
+  height: 80px;
 }
 .menu-btn{ 
     cursor: pointer;
@@ -228,7 +268,7 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    width: 70%;
+    width: 60%;
     height: 100%;
     display: none;
 }
@@ -266,5 +306,16 @@ header{
   .classcabecalhomin{
     transition: .6s ease;
     height:120px; 
+  }
+  header nav{
+    width: 100%;
+    background: linear-gradient(90deg, #3a1624,#741413);
+  }
+  header nav .cardiv{
+    height: 75vh;
+    width: 90vw;
+  }
+  .fundo{
+    width: 0;
   }
 }
