@@ -92,8 +92,8 @@ footer .caixa:nth-child(4) {
 @media(max-width: 950px)
 {
     footer{
-    flex-direction: column;
-    font-size: 20px;
+        flex-direction: column;
+       
     }
     footer .caixa{
         width: 100%;
@@ -169,16 +169,19 @@ button:visited{
 }
 .popuptr:nth-child(1){
     height: 130px;
+    
 }
 .popuptr:nth-child(2){
     text-align: left;
     height: 30px;
-    text-indent: 1ch;
+    
+    
 }
 .popuptr:nth-child(3){
     text-align: left;
     height: 45px;
     text-indent: 1ch;
+   
     
 }
 .popuptr:nth-child(4){
@@ -194,7 +197,7 @@ button:visited{
 }
 .popup-addbot{
     width: 200px;
-    height: 25px;
+    height: 30px;
     margin-right: 1ch;
     border-radius: 5px;
     background: lightgrey;
@@ -203,15 +206,23 @@ button:visited{
     font-weight: bold;
     cursor: pointer;;
 }
+h3{
+    border-bottom: 3px solid #94443c;
+    margin-left: 5px;
+    width: 10vw;
+}
+p{
+    height: 30px;
+}
 
 /** Animações **/
 @keyframes popup {
     from{
-      opacity: 0;
+   
       transform: scale(0.5);
     }
     to{
-      opacity: 1;
+      
       transform: scale(1);
     }
 }
@@ -219,7 +230,10 @@ button:visited{
 /** Resolução **/
 @media(max-width: 950px){
     .d1{
-        width: 80%;
+        width: 100%;
+        display: flex;
+        border-radius: 0;
+        border-bottom: 2px #adabab;
     }
     .popup{
         max-width: 95%;
@@ -252,4 +266,5 @@ button:visited{
         width: 90vw;
         height: 350px;
     }
+    
 }
