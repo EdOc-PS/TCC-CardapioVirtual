@@ -87,7 +87,7 @@ header{
       font-weight: bold;
       width: 450px;
       height: 50px;
-      border: 3px solid linear-gradient(40deg, #3a1624, #741413);;
+      border: 3px solid #adabab;
       border-radius: 5px;
       position: relative;
       top: 63vh;
@@ -277,20 +277,31 @@ header{
 /*Keyframes para Animações*/
 @keyframes fundo {
     from{
-        opacity: 0;
-        
+        opacity: 0;    
     }
     to{
         opacity: 1;
-     
     }
+}
+
+@media(max-width:1430px){
+  
+  header nav{
+    width: 60%;
+    background: linear-gradient(65deg, #3a1624, #741413);
+  }
+  .fundo{
+    width: 40%;
+  }
 }
 
 @media(max-width: 950px)
 {
+  h1{
+    font-size: 30px;
+  }
    .container, .container2{
-     width: 95%;
-     
+     width: 95%; 
    }
    .accordion_item{
      width: 85vw;
