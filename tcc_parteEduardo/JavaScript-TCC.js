@@ -239,8 +239,8 @@ popdiv.addEventListener('click', () => {
 })
 
 popup.addEventListener('click', event => {
-    const classClickedElement = event.target.classList[0];
-    if (classClickedElement === 'popup-fechar' || classClickedElement === 'popup-fundo' ) {
+    const clicado = event.target.classList[0];
+    if (clicado === 'popup-fechar' || clicado === 'popup-fundo'|| clicado === 'fa-solid' || clicado === 'fa-square-xmark') {
         popup.style.display = 'none'
         function unloadScrollBars() {
             document.documentElement.style.overflow = 'auto';
@@ -248,8 +248,8 @@ popup.addEventListener('click', event => {
             document.body.scroll = "no";
         }
         unloadScrollBars();
-    }
-})
+    }
+});
 
 //accordion 
 const accordion_item = document.querySelectorAll(".accordion_item");
