@@ -127,7 +127,7 @@ footer .caixa:nth-child(4) {
 .popupbranco{
     border-radius: 10px;
     background: #f1efef;
-    height: 425px;
+    height: 460px;
 
 }
 .fa-square-xmark{
@@ -136,8 +136,8 @@ footer .caixa:nth-child(4) {
 }
 .popup-fechar{
     position: absolute;
-    top: 15px;
-    right: 18px;
+    top: 10px;
+    right: 15px;
     cursor: pointer;
 }
 .d1{
@@ -163,52 +163,58 @@ button:visited{
 }
 
 .popup-tabela{
-    width: 100%;
-   
+   width: 100%;
+   border-collapse: collapse;
 }
 .popuptr:nth-child(1){
     height: 130px;
-    
 }
 .popuptr:nth-child(2){
     text-align: left;
     height: 30px;
-    
-    
+    font-size: 25px;
+    text-indent: 2ch;
 }
 .popuptr:nth-child(3){
     text-align: left;
-    height: 45px;
-    text-indent: 1ch;
-   
-    
+    height: 65px;
+    text-indent: 3.5ch;
+
 }
 .popuptr:nth-child(4){
     text-align: right;
-    height: 30px;
-    
+    height: 20px;
 }
+
+.popup-input{
+    height: 40px;
+    width: 60px;
+}
+
 .popup-tabimg{
-    width: 545px;
-    height: 300px;
+    width: 455px;
+    height: auto;
     border-radius: 5px;
     margin-top: 2.5px;
 }
 .popup-addbot{
-    width: 200px;
-    height: 30px;
     margin-right: 1ch;
+    width: 200px;
+    height: 45px;
     border-radius: 5px;
     background: lightgrey;
     border: 0.5px solid #adabab;
     color: #474646;
     font-weight: bold;
-    cursor: pointer;;
+    cursor: pointer;
+}
+.popup-addbot:hover{
+    background:#bbbbbb;
 }
 h3{
-    border-bottom: 3px solid #94443c;
-    margin-left: 5px;
-    width: 10vw;
+    color: white;
+    background: #adabab;
+    width: 100%;
 }
 p{
     height: 30px;

@@ -72,7 +72,7 @@
         <div class="accordion_content">  
           <div class="d1">
             <button class=popup-link>
-              <table class="tabela-compra" border="0">
+              <table class="tabela-compra">
                 <tr>
                   <td style="width: 100px "> <img src="img/pao.jpg" class="im2"></td>
                   <th style="width: 150px" class="nomeTable"> Nome</th>
@@ -214,16 +214,19 @@
           <div class="popup-content">
             <table class = "popup-tabela" border = 0>
               <tr class="popuptd">
-               <td> <img class="popup-tabimg" src="img/pao.jpg" alt="">  </td>
+               <td colspan=2 style="background-color:#94443c ;"> <img class="popup-tabimg" src="img/pao.jpg" alt="">  </td>
+              
               </tr>
              <tr class="popuptr">
-                <th><h3> Titulo </h3></th>
+                <th colspan=2><h3> Titulo </h3></th>
+              </tr>
+               <tr class="popuptr" >
+                <td colspan=2><p> Descrição</p></td>
               </tr>
                <tr class="popuptr">
-                <td><p> Descrição</p></td>
-              </tr>
-               <tr class="popuptr">
-                <td> <button class="popup-addbot" onclick="produto.salvar()"> Adicionar ao carrinho </button></td>
+                <td style="width: 50%; text-align: center;"> <input type="number" class="-popup-input"></td>  
+                <td  style="width: 50%; "> <button class="popup-addbot" onclick="produto.salvar()"> Adicionar ao carrinho <i class="fa-solid fa-cart-plus"></i></button></td>
+               
               </tr>
             </table>
            
