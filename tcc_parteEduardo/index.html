@@ -33,7 +33,7 @@
             <th class="thCarrinho">Apagar</th>
             <tbody class="tbody"></tbody>
           </table>
-          <button class="buttonCarrinho">Finalizar compra</button>
+          <button class="buttonCarrinho">Finalizar compra <i class="fa-solid fa-circle-check"></i></button>
         </div>
       </div>
     </nav>
@@ -77,7 +77,7 @@
                 <tr>
                   <td style="width: 100px "> <img src="img/pao.jpg" class="im2"></td>
                   <th style="width: 150px; text-indent: .5ch;" class="nomeTable"> Nome</th>
-                  <td style="width: 80px; text-align: right;"" class=" precoTable"> Preço</td>
+                  <td style="width: 80px; text-align: right;" class=" precoTable"> Preço</td>
                 </tr>
                         
               </table>
@@ -225,23 +225,33 @@
             </tr>
             <tr class="popuptr">
               <td colspan=2>
-                <p> Descrição</p>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis qui perferendis enim laudantium
+                  natus?</p>
               </td>
             </tr>
             <tr class="popuptr">
-              <td style="width: 50%; text-align: center;"> <button class="popup-button">
-                   +</button><input type="text" class="popup-input"><button
-                  class="popup-button">-</button></td>
-
+              <td colspan=2>
+                <div class="radio">
+                  <p> Opções: </p>
+                  <input type="radio" name="obc" id="ra" style="margin-left: 30px ;"> 
+                  <label for="ra"> 300ml</label>
+                  <input type="radio" name="obc" class = "radio" style="margin-left: 30px ;"> 
+                  <label for="rad">500ml</label>
+                </div>
+              </td>
+            </tr>
+            <tr class="popuptr">
+              <td style="width: 50%; text-align: left; text-indent: 3.5ch">
+                <input type="button" class="popup-button" value="+">
+                <input type="text" class="popup-input">
+                <input type="button" class="popup-button" value="-">
+              </td>
               <td style="width: 50%; "> <button class="popup-addbot" onclick="produto.salvar()"> Adicionar ao carrinho
-                  <i class="fa-solid fa-cart-plus"></i></button></td>
-
+              <i class="fa-solid fa-cart-plus"></i></button></td>
             </tr>
           </table>
-
         </div>
       </div>
-
     </div>
   </div>
 

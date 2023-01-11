@@ -119,7 +119,8 @@ footer .caixa:nth-child(4) {
     max-width: 570px;
     margin: 10% auto;
     padding: 7.5px;
-    background:#9c5d5b;
+    background:#94443c;
+    ;
     position: relative;
     border-radius: 5px;
     animation: popup 500ms;
@@ -127,7 +128,7 @@ footer .caixa:nth-child(4) {
 .popupbranco{
     border-radius: 10px;
     background: #f1efef;
-    height: 470px;
+    height: 515px;
 
 }
 .fa-square-xmark{
@@ -167,11 +168,10 @@ button.popup-link{
 }
 .popuptr:nth-child(1){
     height: 130px;
-    background:#9c5d5b;
+    background:#94443c;
 }
 .popuptr:nth-child(2){
-    
-    background: linear-gradient(40deg, #846c7c, #9c5d5b);
+    background: linear-gradient(40deg,#846c7c 20%, #94443c );
     text-align: left;
     height: 40px;
     font-size: 25px;
@@ -179,37 +179,40 @@ button.popup-link{
 }
 .popuptr:nth-child(3){
     text-align: left;
-    height: 65px;
-    text-indent: 3.5ch;
+    height: 75px;
+    text-indent: 2.5ch;
+    border-bottom: 1px solid #e6e4e4;
 }
 .popuptr:nth-child(4){
+    text-indent: 2ch;
+    text-align: left;
+    height: 38px;
+}
+.popuptr:nth-child(5){
     text-align: right;
     height: 20px;
 }
 .popup-input{
     border: 1px solid  #adabab;
+    font-size: 25px;
     border-radius: 5px;
-    height: 40px;
+    height: 30px;
     width: 55px;
     margin: 5px;
 }
 .popup-button{
-    text-align: center;
     font-size: 25px;
-    color: lightgrey;
+    color: #f1efef;
     cursor: pointer;
     border: none;
     background: #846c7c;
-    height: 40px;
+    height: 30px;
     width: 50px;
     border-radius: 5px;
 }
 .popup-button:nth-child(1){
-  
     background: #9c5d5b;
 }
-
-
 .popup-tabimg{
     width: 555px;
     height: 300px;
@@ -230,21 +233,24 @@ button.popup-link{
 .popup-addbot:hover{
     background:#bbbbbb;
 }
+
 h3{
-    color: white;
+    color: #f1efef;
 }
 p{
-    height: 30px;
+    margin-top: 5px;
+    margin-left: 13px;
+    margin-right: 13px;
 }
 
 /** Animações **/
 @keyframes popup {
     from{
-   
+      
       transform: scale(0.5);
     }
     to{
-      
+    
       transform: scale(1);
     }
 }
