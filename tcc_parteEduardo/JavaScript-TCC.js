@@ -1,4 +1,4 @@
-//clicar na posição
+0//clicar na posição
 function escolher(valor) {
     if (valor.value == "lanche") {
         const lanches = document.getElementById("lancheTitulo");

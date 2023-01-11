@@ -15,32 +15,33 @@
   <header class="classcabecalho"> <img src="img/logo3.png" class="logoimg">
     <nav>
       <div class="cardiv">
-        <table class="textoTabela" >
+        <table class="textoTabela">
           <tr>
-              <th rowspan="2"><i class="fa-regular fa-face-meh fa-5x"></i></th>
-              <td class="Carrinho-VazioTD"> OPS!</td>   
+            <th rowspan="2"><i class="fa-regular fa-face-meh fa-5x"></i></th>
+            <td class="Carrinho-VazioTD"> OPS!</td>
           </tr>
           <tr>
-              <td class="Carrinho-VazioTD"colspan="2">Seu carrinho esta vazio!</td>
+            <td class="Carrinho-VazioTD" colspan="2">Seu carrinho esta vazio!</td>
           </tr>
-      </table> 
-          <div class="divCarrinho" hidden>
-            <table class="tabela" border="1">
-              <th class="thCarrinho" colspan="2">Item</th>
-              <th class="thCarrinho">Preço</th>
-              <th class="thCarrinho">Quantidade</th>
-              <th class="thCarrinho">Total</th>
-              <th class="thCarrinho">Apagar</th>
-              <tbody class="tbody"></tbody>
-            </table>
-           <button class="buttonCarrinho">Finalizar compra</button> 
-          </div>
+        </table>
+        <div class="divCarrinho" hidden>
+          <table class="tabela" border="1">
+            <th class="thCarrinho" colspan="2">Item</th>
+            <th class="thCarrinho">Preço</th>
+            <th class="thCarrinho">Quantidade</th>
+            <th class="thCarrinho">Total</th>
+            <th class="thCarrinho">Apagar</th>
+            <tbody class="tbody"></tbody>
+          </table>
+          <button class="buttonCarrinho">Finalizar compra</button>
+        </div>
       </div>
     </nav>
     </nav>
     <ul class="headerUL">
       <li class="headerLI"><button class="user"><i class="fa-solid fa-user-plus carrinho fa-3x"></i> </button></li>
-      <li class="headerLI"> <button class="menu-btn"><i class="fa-solid fa-cart-arrow-down carrinho fa-3x"></i></button></li>
+      <li class="headerLI"> <button class="menu-btn"><i class="fa-solid fa-cart-arrow-down carrinho fa-3x"></i></button>
+      </li>
     </ul>
   </header>
 
@@ -55,9 +56,9 @@
 
   <h1 id="bebidaTitulo" class="blog-title"> Bebidas </h1>
   <br>
-  
+
   <!--Accordion-->
-  
+
   <div class="container">
     <div class="content">
       <div class="accordion_item" style="background-color: #fafdff;">
@@ -69,16 +70,17 @@
             +
           </div>
         </div>
-        <div class="accordion_content">  
+        <div class="accordion_content">
           <div class="d1">
             <button class=popup-link>
               <table class="tabela-compra">
                 <tr>
                   <td style="width: 100px "> <img src="img/pao.jpg" class="im2"></td>
-                  <th style="width: 150px" class="nomeTable"> Nome</th>
-                  <td style="width: 80px" class="precoTable">Preço</td>
+                  <th style="width: 150px; text-indent: .5ch;" class="nomeTable"> Nome</th>
+                  <td style="width: 80px; text-align: right;"" class=" precoTable"> Preço</td>
                 </tr>
-              </table>
+                        
+              </table>
             </button>
           </div>
         </div>
@@ -108,7 +110,7 @@
         </div>
         <div class="accordion_content">
         </div>
- 
+
       </div>
       <div class="accordion_item" style="background-color:  #fafdff;">
         <div class="accordion_header">
@@ -121,7 +123,7 @@
         </div>
         <div class="accordion_content">
         </div>
- 
+
       </div>
       <div class="accordion_item" style="background-color: #fafdff;">
         <div class="accordion_header">
@@ -134,7 +136,7 @@
         </div>
         <div class="accordion_content">
         </div>
- 
+
       </div>
       <div class="accordion_item" style="background-color:  #fafdff">
         <div class="accordion_header">
@@ -147,7 +149,7 @@
         </div>
         <div class="accordion_content">
         </div>
- 
+
       </div>
       <div class="accordion_item" style="background-color: #fafdff;">
         <div class="accordion_header">
@@ -160,9 +162,9 @@
         </div>
         <div class="accordion_content">
         </div>
- 
+
       </div>
-      
+
       <div class="accordion_item" style="background-color: #fafdff;">
         <div class="accordion_header">
           <span>
@@ -174,7 +176,7 @@
         </div>
         <div class="accordion_content">
         </div>
- 
+
       </div>
       <div class="accordion_item" style="background-color: #fafdff;">
         <div class="accordion_header">
@@ -187,8 +189,8 @@
         </div>
         <div class="accordion_content">
         </div>
- 
-      </div>  
+
+      </div>
       <div class="accordion_item" style="background-color: #fafdff;">
         <div class="accordion_header">
           <span>
@@ -200,7 +202,7 @@
         </div>
         <div class="accordion_content">
         </div>
- 
+
       </div>
     </div>
   </div>
@@ -211,35 +213,42 @@
 
       <div class="popupbranco">
         <div class="popup-fechar"><i class="fa-solid fa-square-xmark fa-2x"></i></div>
-          <div class="popup-content">
-            <table class = "popup-tabela" border = 0>
-              <tr class="popuptd">
-               <td colspan=2 style="background-color:#94443c ;"> <img class="popup-tabimg" src="img/pao.jpg" alt="">  </td>
-              
-              </tr>
-             <tr class="popuptr">
-                <th colspan=2><h3> Titulo </h3></th>
-              </tr>
-               <tr class="popuptr" >
-                <td colspan=2><p> Descrição</p></td>
-              </tr>
-               <tr class="popuptr">
-                <td style="width: 50%; text-align: center;"> <input type="number" class="-popup-input"></td>  
-                <td  style="width: 50%; "> <button class="popup-addbot" onclick="produto.salvar()"> Adicionar ao carrinho <i class="fa-solid fa-cart-plus"></i></button></td>
-               
-              </tr>
-            </table>
-           
-          </div>
-       </div>
+        <div class="popup-content">
+          <table class="popup-tabela" border=0>
+            <tr class="popuptr">
+              <td colspan=2> <img class="popup-tabimg" src="img/pao.jpg" alt=""></td>
+            </tr>
+            <tr class="popuptr">
+              <th colspan=2>
+                <h3> Titulo </h3>
+              </th>
+            </tr>
+            <tr class="popuptr">
+              <td colspan=2>
+                <p> Descrição</p>
+              </td>
+            </tr>
+            <tr class="popuptr">
+              <td style="width: 50%; text-align: center;"> <button class="popup-button">
+                   +</button><input type="text" class="popup-input"><button
+                  class="popup-button">-</button></td>
 
-     </div>
+              <td style="width: 50%; "> <button class="popup-addbot" onclick="produto.salvar()"> Adicionar ao carrinho
+                  <i class="fa-solid fa-cart-plus"></i></button></td>
+
+            </tr>
+          </table>
+
+        </div>
+      </div>
+
+    </div>
   </div>
 
   <h1 id="lancheTitulo" class="blog-title"> Lanches </h1>
-  
+
   <br>
-   <!--Accordion-->
+  <!--Accordion-->
   <div class="container2">
     <div class="content">
       <div class="accordion_item" style="background-color: #fafdff;">
@@ -253,7 +262,7 @@
         </div>
 
         <div class="accordion_content">
-         
+
         </div>
       </div>
       <div class="accordion_item" style="background-color: #fafdff;">
@@ -267,7 +276,7 @@
         </div>
 
         <div class="accordion_content">
-         
+
         </div>
       </div>
       <div class="accordion_item" style="background-color: #fafdff;">
@@ -280,7 +289,7 @@
           </div>
         </div>
         <div class="accordion_content">
-          
+
         </div>
       </div>
       <div class="accordion_item" style="background-color: #fafdff;">
@@ -294,7 +303,7 @@
         </div>
         <div class="accordion_content">
         </div>
- 
+
       </div>
       <div class="accordion_item" style="background-color: #fafdff;">
         <div class="accordion_header">
@@ -307,7 +316,7 @@
         </div>
         <div class="accordion_content">
         </div>
- 
+
       </div>
     </div>
   </div>

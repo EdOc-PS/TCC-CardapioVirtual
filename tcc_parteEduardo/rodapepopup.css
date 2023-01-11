@@ -119,7 +119,7 @@ footer .caixa:nth-child(4) {
     max-width: 570px;
     margin: 10% auto;
     padding: 7.5px;
-    background: #94443c;
+    background:#9c5d5b;
     position: relative;
     border-radius: 5px;
     animation: popup 500ms;
@@ -127,7 +127,7 @@ footer .caixa:nth-child(4) {
 .popupbranco{
     border-radius: 10px;
     background: #f1efef;
-    height: 460px;
+    height: 470px;
 
 }
 .fa-square-xmark{
@@ -136,30 +136,29 @@ footer .caixa:nth-child(4) {
 }
 .popup-fechar{
     position: absolute;
-    top: 10px;
-    right: 15px;
+    top: 12px;
+    right: 12px;
     cursor: pointer;
 }
 .d1{
+    border: 1px solid #adabab;
     background-color: lightgrey;
-    width: 300px;
+    width: 295px;
     height: 100px;
     border-radius: 10px;
     display: inline-block;
     
 }
+.d1:hover{
+    background: #bdbdbd;
+}
 button.popup-link{
-    text-align: center;
+    cursor: pointer;
     display: block;
     height: 100%;
     width: 100%;
-    text-decoration: none;
     border: none;
-    background-color: transparent;
-}
-button:visited{
-    color: black;
-    background-color: transparent;
+    background: transparent;
 }
 
 .popup-tabela{
@@ -168,10 +167,13 @@ button:visited{
 }
 .popuptr:nth-child(1){
     height: 130px;
+    background:#9c5d5b;
 }
 .popuptr:nth-child(2){
+    
+    background: linear-gradient(40deg, #846c7c, #9c5d5b);
     text-align: left;
-    height: 30px;
+    height: 40px;
     font-size: 25px;
     text-indent: 2ch;
 }
@@ -179,21 +181,38 @@ button:visited{
     text-align: left;
     height: 65px;
     text-indent: 3.5ch;
-
 }
 .popuptr:nth-child(4){
     text-align: right;
     height: 20px;
 }
-
 .popup-input{
+    border: 1px solid  #adabab;
+    border-radius: 5px;
     height: 40px;
-    width: 60px;
+    width: 55px;
+    margin: 5px;
+}
+.popup-button{
+    text-align: center;
+    font-size: 25px;
+    color: lightgrey;
+    cursor: pointer;
+    border: none;
+    background: #846c7c;
+    height: 40px;
+    width: 50px;
+    border-radius: 5px;
+}
+.popup-button:nth-child(1){
+  
+    background: #9c5d5b;
 }
 
+
 .popup-tabimg{
-    width: 455px;
-    height: auto;
+    width: 555px;
+    height: 300px;
     border-radius: 5px;
     margin-top: 2.5px;
 }
@@ -213,8 +232,6 @@ button:visited{
 }
 h3{
     color: white;
-    background: #adabab;
-    width: 100%;
 }
 p{
     height: 30px;
