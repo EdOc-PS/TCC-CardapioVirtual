@@ -16,22 +16,23 @@
     text-transform: uppercase;
 }
 footer{
-  
     margin-top: 20%;
     width: 100%;
     min-width: 250px;
     background:#444;
     display: flex;
-    justify-content: space-between;
+    
     border-top-left-radius: 10px;
     border-top-right-radius: 10px ;
 }
 footer .caixa {
+    margin-left: 250px;
     width: 500px;
     min-width: 150px;
     padding: 20px;
 }
 footer .caixa:nth-child(4) {
+    
     width: 400px;
 }
 .caixa h2{
@@ -40,12 +41,11 @@ footer .caixa:nth-child(4) {
 }
 .caixa ul li{
     margin: 10px 0px;
+    color: #f1efef;
     list-style: none;
+    font-size: 18px;
 }
-.caixa ul li a{
-    color: #ddd;
-    text-decoration: none;
-}
+
 .caixa p
 {
     color: #fff;
