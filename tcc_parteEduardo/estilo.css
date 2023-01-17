@@ -212,12 +212,11 @@ header{
    
 .escolha{
     height: 40px;
-    width: 80%;
+    width: 50%;
     border-radius: 15px;
     text-align: center;
     font-size: 18px;
 }
-
   .blog-title:before,
   .blog-title:after {
     background-color:#adabab;
@@ -331,6 +330,9 @@ header{
 
 @media(max-width: 950px)
 {
+  .escolha{
+    width: 80%;
+  }
   .blog-title:after, .blog-title:before, h1{
     font-size: 27px;
     width: 65%;
