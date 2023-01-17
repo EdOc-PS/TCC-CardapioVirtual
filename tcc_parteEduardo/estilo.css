@@ -74,11 +74,13 @@ header{
       background: #9c5d5b;
       color: #f1efef;
       border-radius: 5px;
+      cursor: pointer;
   }
   .buttonqQtdeCarrinho:nth-child(1){
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     background: #846c7c;
+   
   }
   .buttonqQtdeCarrinho:nth-child(3){
     border-top-left-radius: 0;
@@ -104,9 +106,10 @@ header{
       border-collapse: collapse;
   }
     .thCarrinho{ 
+     
       color:#e9e8e8;
-      background: #846c7c;
-      padding: 0px 10px;
+      background: #adabab;
+      padding: 2px 15px;
     
   }
     .imgCarrinho{
