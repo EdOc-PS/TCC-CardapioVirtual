@@ -50,7 +50,12 @@ include_once('conexao.php');
                             divPedidoBranca_Pedente.classList.remove("divPedidoBranca_Pendente");
                             divPedidoBranca_Pedente.classList.add("divPedidoBranca_vazia");
                         </script>
-                        <p class='textoPedido'>Não há pedidos!</p>  
+
+                        <div class="divPedido"> 
+                    <div class= "SemP">
+                        <p class='textoPedido'>Nenhum pedido encontrado para esta data! <i class="fa-regular fa-calendar-xmark"></i></p>  
+                  </div>  
+                  </div>
                 </div>
             </div>     
                 <?php 
