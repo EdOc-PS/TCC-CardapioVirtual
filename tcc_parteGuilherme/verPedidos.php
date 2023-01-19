@@ -9,15 +9,11 @@ include('conexao.php');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo_Pedidos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <title>Ver pedidos</title>
 </head>
 
 <body>
-<header class="classcabecalho"> <img src="img_Guilherme/logo3.png" class="logoimg">
-<ul class="headerUL">
-      <li class="headerLI"><button class="user"><i class="fa-solid fa-house-chimney carrinho fa-3x"></i></button></li>
-      </ul></header>
+<header class="classcabecalho"> <img src="img_Guilherme/logo3.png" class="logoimg"></header>
 <br><br><br><br><br><br><br><br>
     <h1 class='blog-title'> Pedidos Pendentes </h1>
     <div class='divPedido'>

@@ -10,7 +10,6 @@ include('conexao.php');
     <link rel="stylesheet" href="estilo_PedidoFinalizados.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedidos finalizados</title>
     <script>
@@ -39,20 +38,13 @@ include('conexao.php');
     </script>
 </head>
 <body>
-<header class="classcabecalho"><img src="img_Guilherme/logo3.png" class="logoimg">
-<ul class="headerUL">
-      <li class="headerLI"><button class="user"><i class="fa-solid fa-house-chimney carrinho fa-3x"></i> </button></li>
-      </ul>
-      </header>
+<header class="classcabecalho"><img src="img_Guilherme/logo3.png" class="logoimg"></header>
 <br><br><br><br><br><br><br><br>
     
         <form action="" id="formPesquisar" method="POST">
-            <label for="inpuntPesquisar">Pesquise pela data:</label>
-           
-           <div class="al">
-            <input type="date" name="inputPesquisar" id="inputPesquisar" >
-            <button type="submit" name="EnviarPesquisar" id="inputBotao"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
+            <label for="inpuntPesquisar">Pesquisar data:</label>
+            <input type="date" name="inputPesquisar" id="inputPesquisar">
+            <input type="submit" name="EnviarPesquisar"value="Pesquisar">
         </form>
         <br>
         <div class="resultadosPesquisa">

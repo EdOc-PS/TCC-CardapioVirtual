@@ -1,22 +1,14 @@
-*{
-    font-family: sans-serif;
-}
 .classcabecalho {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;  
+    top: 0;
     position: fixed;
-    top: 0%;
-    font-size: 20px;
-    padding: 0px 50px;
+    width: 100%;
+    height: 120px;
     background: linear-gradient(800deg, #3a1624, #711613);
 }
 img{   
     margin-top: 5px;
     width: 80px;
     height: auto;
-    border-radius: 5px;
 }
 .blog-title:before,
 .blog-title:after {
@@ -45,101 +37,43 @@ h1 {
     color: #6e6e6e;
 }
 .divPedido{
-    margin-top: 20px;
-    box-shadow: 0px 5px 1em #3f0c0b;
+    box-shadow: 0px 3px 13px #3f0c0b; 
     background: #94443c;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 20px;
     width: 60vw;
-    display: flex;
     align-items: center;
     justify-content: center;
     align-items: center;
-  }
-  .divPedido:nth-child(3){
-    margin-top: 18vh;
-    width: 35vw; 
   }
   .divPesquisar{
     text-align: center;
     margin-bottom: 10px;  
   }
-  #inputPesquisar{
+  .inputPesquisar{
     width: 20vw;
-    height: 40px;
-    border-radius: 10px;
-    border: 2px solid #adabab;
-    color: #adabab;
-    font-weight: bold;
-    font-size: 15px;
-    cursor:text;
-    text-indent: 1ch;
-    border-top-right-radius:0;
-    border-bottom-right-radius:0;
   }
-
-  #inputBotao{
-    color: #e0e0e0;
-    background: #846c7c;
-    width: 55px;
-    border-top-right-radius:10px;
-    border-bottom-right-radius:10px;
-    height: 40px;
-    border: 2px solid #846c7c;
-    cursor: pointer;
-    border-left: none;
-  }
-  #inputBotao:hover{
-    background:#755e6e;
-  }
-  #formPesquisar{
-      margin-top: 6vh;
-  }
-  label{
-      font-size: 20px;
-      font-weight: bold;
-      color: #474646;
-    
-  }
-  .al{
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    word-spacing: 1em;
+  .divPedidoBranca{
+      width: auto;
+      background-color: white;
   }
   .tabela{
-
     border: 3px solid #adabab;
     border-collapse: collapse;
-    border-radius: 10px;
-    overflow: hidden;
     height: 10vh;
-    width: 55vw;
-    background: #fafdff;
-    cursor: default;
+    width: 100%;
 }
-th{ 
-    color: #383737;
-    background-color: #adabab;
-    padding: 10px;
-
+th{
+    background-color: lightgray;
 }
 td{
-    padding: 10px;
     text-align: center;
-    border: none;
-    border-bottom: 2px solid #adabab;
 }
-tr:nth-child(even){
-    background:#e1e4e6;
-  }
 .td_desc{
     width: 10vw;
     text-align: left;
     word-break: break-word;
 }
-
 .textoAtualizar{
     text-align: center;
 }
@@ -147,21 +81,4 @@ body{
     align-items: center;
     display: flex;
     flex-direction: column;
-}
-
-.textoPedido{
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
-    color:#474646;
-    
-}
-.SemP{
-    justify-content: center;
-    display: flex;
-    align-items: center; 
-    background: #fafdff;
-    width: 60vh;
-    height: 10vh;
-    border-radius: 10px;
 }

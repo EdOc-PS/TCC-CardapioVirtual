@@ -1,15 +1,8 @@
-*{
-    font-family: sans-serif;
-}
 .classcabecalho {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;  
+    top: 0;
     position: fixed;
-    top: 0%;
-    font-size: 20px;
-    padding: 0px 50px;
+    width: 100%;
+    height: 120px;
     background: linear-gradient(800deg, #3a1624, #711613);
 }
 
@@ -60,28 +53,22 @@ h1 {
 .divPedidoBranca_Pendente {
     border-radius: 5px;
     width: auto;
-    background-color: #fafdff;
+    background-color: white;
 }
 .divPedidoBranca_Processo {
     border-radius: 5px;
     width: auto;
-    background-color: #fafdff;;
+    background-color: white;
 }
 .divPedidoBranca_Concluido {
     border-radius: 5px;
     width: auto;
-    background-color: #fafdff;
+    background-color: white;
 }
 .divPedidoBranca_vazia{
-    color: #474646;
-    height: 10vh;
-    border-radius: 10px;
+    border-radius: 5px;
     width: 90%;
-    background-color: #fafdff;
-    font-size: 23px;
-    align-items: center;
-    display: flex;
-    
+    background-color: white;
 }
 .tabela{
     border: 3px solid #adabab;
