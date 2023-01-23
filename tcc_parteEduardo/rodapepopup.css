@@ -125,7 +125,7 @@ footer .caixa:nth-child(4) {
 .popupbranco{
     border-radius: 10px;
     background: #f1efef;
-    height: 515px;
+    height: auto;
 
 }
 .fa-square-xmark{
@@ -178,14 +178,22 @@ button.popup-link{
     text-align: left;
     height: 75px;
     text-indent: 2.5ch;
-    border-bottom: 1px solid #e6e4e4;
+
 }
 .popuptr:nth-child(4){
+    height: 20px;
+    text-indent: 2.5ch;
+    border-bottom: 2px solid #e6e4e4;
+}
+.popuptr:nth-child(4) p{
+    margin-bottom: 25px;
+}
+.popuptr:nth-child(5){
     text-indent: 2ch;
     text-align: left;
     height: 38px;
 }
-.popuptr:nth-child(5){
+.popuptr:nth-child(6){
     text-align: right;
     height: 20px;
 }
@@ -220,12 +228,30 @@ button.popup-link{
     margin-right: 1ch;
     width: 200px;
     height: 45px;
-    border-radius: 5px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     background: lightgrey;
     border: 0.5px solid #adabab;
     color: #474646;
     font-weight: bold;
     cursor: pointer;
+    margin-bottom: 5px;
+}
+.popup-addbot1{
+    color: #f1efef;
+    font-weight: bold;
+    cursor: pointer;
+    height: 45px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: #846c7c;
+    border: 0.5px solid #adabab;
+    border-right: none;
+}
+.popup-addbot1 p {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 0;
 }
 .popup-addbot:hover{
     background:#bbbbbb;
