@@ -102,11 +102,16 @@ header{
  }
  /***/
     .tabela{
-      border: 2px solid #adabab;
+      border: none;
       border-collapse: collapse;
+    
   }
-    .thCarrinho{ 
-     
+  .tabela td{
+    border-bottom: 3px solid #adabab;
+    padding: 7px;
+  }
+    .thCarrinho{   
+      border: none;
       color:#e9e8e8;
       background: #adabab;
       padding: 2px 15px;

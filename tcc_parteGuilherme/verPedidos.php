@@ -9,13 +9,20 @@ include('conexao.php');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo_Pedidos.css">
+    <link rel="stylesheet" href="estilo_Guilherme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <title>Ver pedidos</title>
 </head>
 
 <body>
-<header class="classcabecalho"> <img src="img_Guilherme/logo3.png" class="logoimg"></header>
+<header><img src="img_Guilherme/logo3.png" class="logoimg">
+<ul class="headerUL">
+      <li class="headerLI"><button class="menu-btn""><i class="fa-solid fa-house-chimney carrinho fa-3x"></i> </button></li>
+      </ul>
+      </header>
 <br><br><br><br><br><br><br><br>
-    <h1 class='blog-title'> Pedidos Pendentes </h1>
+<h1 class="blog-title"> Progresso dos Pedidos <i class="fa-solid fa-pen-to-square"></i> </h1>
+    <h2 class='subti'> Pendentes </h2>
     <div class='divPedido'>
         <div class='divPedidoBranca_Pendente'>
             <?php 
@@ -25,8 +32,8 @@ include('conexao.php');
              ?>
             <table class='tabela' border='1'>
                 <tr>
-                    <th>Imagem</th>
-                    <th>Nome</th>
+                  
+                    <th colspan = 2 >Nome</th>
                     <th>Quantidade</th>
                     <th>Descrição</th>
                     <th>Preço</th>
@@ -78,7 +85,7 @@ include('conexao.php');
         </div>
     </div>
 
-    <h1 class='blog-title'> Pedidos em processo </h1>
+    <h2 class='subti'> Em processo </h2>
     <div class='divPedido'>
         <div class='divPedidoBranca_Processo'>
     <?php 
@@ -88,8 +95,8 @@ include('conexao.php');
     ?>           
     <table class='tabela' border='1'>
         <tr>
-            <th>Imagem</th>
-            <th>Nome</th>
+            
+            <th colspan = 2 >Nome</th>
             <th>Quantidade</th>
             <th>Descrição</th>
             <th>Preço</th>
@@ -133,7 +140,7 @@ include('conexao.php');
            </div>
     </div>
 
-    <h1 class='blog-title'> Pedidos concluído </h1>
+    <h2 class='subti'> Concluído(s) <i class="fa-solid fa-check"></i></h2>
     <div class='divPedido'>
         <div class='divPedidoBranca_Concluido'>
             <?php 
@@ -143,8 +150,7 @@ include('conexao.php');
             ?>
                 <table class='tabela' border='1'>
                     <tr>
-                        <th>Imagem</th>
-                        <th>Nome</th>
+                        <th colspan = 2 >Nome</th>
                         <th>Quantidade</th>
                         <th>Descrição</th>
                         <th>Preço</th>
@@ -189,6 +195,9 @@ include('conexao.php');
             ?>    
        </div>
     </div>
+    <footer>
+   <i class="fa-solid fa-mug-saucer fa-2x" aria-hidden="true"></i>
+   </footer>    
 
 </body>
 
