@@ -26,7 +26,7 @@ include('conexao.php');
     <div class='divPedido'>
         <div class='divPedidoBranca_Pendente'>
             <?php 
-                $select = 'SELECT `img_produto`, `nm_produto`, `qtde_produto`, `desc_produto`, `preco_produto`, `total_produto`, `dataPedido_produto`, `status_pedido`, `id_pedido` FROM `pedido` WHERE `status_pedido`= "Pedido feito"';
+                $select = 'SELECT `img_produto`, `nm_produto`, `qtde_produto`, `obs_produto`, `preco_produto`, `total_produto`, `dataPedido_produto`, `status_pedido`, `id_pedido` FROM `pedido` WHERE `status_pedido`= "Pedido feito"';
                 $pedidosPedentes = $conn->query($select);
                 if($pedidosPedentes->num_rows > 0){    
              ?>
@@ -47,7 +47,7 @@ include('conexao.php');
                     <td><img src="<?php echo $exibirPedido['img_produto']?>"></td>
                     <td><?php echo $exibirPedido['nm_produto']?></td>
                     <td><?php echo $exibirPedido['qtde_produto']?></td>
-                    <td class='td_desc'><?php echo $exibirPedido['desc_produto']?></td>
+                    <td class='td_obs'><?php echo $exibirPedido['obs_produto']?></td>
                     <td><?php echo $exibirPedido['preco_produto']?></td>
                     <td><?php echo $exibirPedido['total_produto']?></td>
                     <td>
@@ -61,7 +61,7 @@ include('conexao.php');
                         <div class='divCancelado'>
                             <form action='CancelarPedido.php' method='POST'>
                                 <input type='hidden' name='idHidden' value=<?php echo $exibirPedido['id_pedido']?>>
-                                <input type='submit' value='Pedido cancelado!' class='buttonPedidoCancelado'>
+                                <input type='submit' value='Cancelar' class='buttonPedidoCancelado'>
                             </form>
                         </div>
                     </td>
@@ -89,7 +89,7 @@ include('conexao.php');
     <div class='divPedido'>
         <div class='divPedidoBranca_Processo'>
     <?php 
-        $select = 'SELECT `img_produto`, `nm_produto`, `qtde_produto`, `desc_produto`, `preco_produto`, `total_produto`, `dataPedido_produto`, `status_pedido`, `id_pedido` FROM `pedido` WHERE `status_pedido`= "Pedido em processo"';
+        $select = 'SELECT `img_produto`, `nm_produto`, `qtde_produto`, `obs_produto`, `preco_produto`, `total_produto`, `dataPedido_produto`, `status_pedido`, `id_pedido` FROM `pedido` WHERE `status_pedido`= "Pedido em processo"';
         $pedidosPedentes = $conn->query($select);
         if($pedidosPedentes->num_rows > 0){
     ?>           
@@ -110,7 +110,7 @@ include('conexao.php');
             <td><img src="<?php echo $exibirPedido['img_produto']?>"></td>
             <td><?php echo $exibirPedido['nm_produto']?></td>
             <td><?php echo $exibirPedido['qtde_produto']?></td>
-            <td class='td_desc'><?php echo $exibirPedido['desc_produto']?></td>
+            <td class='td_obs'><?php echo $exibirPedido['obs_produto']?></td>
             <td><?php echo $exibirPedido['preco_produto']?></td>
             <td><?php echo $exibirPedido['total_produto']?></td>
             <td>
@@ -144,7 +144,7 @@ include('conexao.php');
     <div class='divPedido'>
         <div class='divPedidoBranca_Concluido'>
             <?php 
-                $select = 'SELECT `img_produto`, `nm_produto`, `qtde_produto`, `desc_produto`, `preco_produto`, `total_produto`, `dataPedido_produto`, `status_pedido`, `id_pedido` FROM `pedido` WHERE `status_pedido`= "Pedido concluído"';
+                $select = 'SELECT `img_produto`, `nm_produto`, `qtde_produto`, `obs_produto`, `preco_produto`, `total_produto`, `dataPedido_produto`, `status_pedido`, `id_pedido` FROM `pedido` WHERE `status_pedido`= "Pedido concluído"';
                 $pedidosPedentes = $conn->query($select);
                 if($pedidosPedentes->num_rows > 0){
             ?>
@@ -164,7 +164,7 @@ include('conexao.php');
             <td><img src="<?php echo $exibirPedido['img_produto']?>"></td>
             <td><?php echo $exibirPedido['nm_produto']?></td>
             <td><?php echo $exibirPedido['qtde_produto']?></td>
-            <td class='td_desc'><?php echo $exibirPedido['desc_produto']?></td>
+            <td class='td_obs'><?php echo $exibirPedido['obs_produto']?></td>
             <td><?php echo $exibirPedido['preco_produto']?></td>
             <td><?php echo $exibirPedido['total_produto']?></td>
             <td>

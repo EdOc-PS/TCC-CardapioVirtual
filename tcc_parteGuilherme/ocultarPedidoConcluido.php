@@ -2,7 +2,7 @@
 header("location: verPedidos.php");
 include('conexao.php');
 echo $_POST['idHidden'];
-$selectOcultar = 'SELECT `img_produto`, `nm_produto`, `qtde_produto`, `desc_produto`, `preco_produto`, `total_produto`, `dataPedido_produto`, `status_pedido`, `id_pedido` FROM `pedido`';
+$selectOcultar = 'SELECT `img_produto`, `nm_produto`, `qtde_produto`, `obs_produto`, `preco_produto`, `total_produto`, `dataPedido_produto`, `status_pedido`, `id_pedido` FROM `pedido`';
 $selectPedidos = $conn->query($selectOcultar);
 
 while($ocultarPedido = $selectPedidos->fetch_assoc()){

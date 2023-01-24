@@ -1,17 +1,4 @@
-0//clicar na posição
-function escolher(valor) {
-    if (valor.value == "lanche") {
-        const lanches = document.getElementById("lancheTitulo");
-        lanches.scrollIntoView({ behavior: "smooth" });
-    }
-    if (valor.value == "bebida") {
-        const bebidas = document.getElementById("bebidaTitulo");
-        bebidas.scrollIntoView({ behavior: "smooth" });
-    }
-
-}
-
-//carrinho
+//entrando no carrinho
 const btn = document.querySelector('.menu-btn');
 const btnuser = document.querySelector('.user');
 const nav = document.querySelector('nav');
@@ -21,6 +8,7 @@ const imguser = document.querySelector('.fa-solid.fa-user-plus');
 const cardiv = document.querySelector('.cardiv');
 const divCarrinho = document.querySelector('.divCarrinho');
 const textoTabela = document.querySelector('.textoTabela');
+const tbodyCheckout = document.querySelector('.tbodyCheckout');
 const tbody = document.querySelector('.tbody');
 const checkCarrinho = document.querySelector('fa-solid fa-circle-check fa-1x');
 btn.onclick = function () {
@@ -62,7 +50,7 @@ btn.addEventListener('click', () => {
         document.body.scroll = "no";
     }
     unloadScrollBars();
-})
+});
 
 //adicionar item ao carrinho
 
@@ -85,8 +73,7 @@ class Produto {
     salvar() {
         let produto = this.lerDados();
         this.adicionar(produto);
-        this.listaTabela();
-        console.log(this.arrayProdutos);
+        this.listaTabela();        
     }
     adicionar(produto) {
         let array = this.arrayProdutos;
@@ -106,6 +93,7 @@ class Produto {
         produto.id = this.id;
         produto.imagem = "img_Guilherme/comida.jpg";
         produto.nomeProduto = "Hamburguer";
+        produto.obs = "500ml";
         produto.qtde = "3";
         produto.preco = "19";
         return produto;
@@ -119,6 +107,7 @@ class Produto {
             //let td_id = tr.insertCell(); //adiciona as colunas para a linha
             let td_imagem = tr.insertCell();
             let td_nome = tr.insertCell();
+            let td_obs = tr.insertCell();
             let td_preco = tr.insertCell();
             let td_qtde = tr.insertCell();
             let td_total = tr.insertCell();
@@ -126,6 +115,7 @@ class Produto {
 
             //td_id.innerText = this.arrayProdutos[i].id;//dou valor as linhas da tabela
             td_nome.innerText = this.arrayProdutos[i].nomeProduto;
+            td_obs.innerText = this.arrayProdutos[i].obs;
             td_preco.innerText = "R$" + this.arrayProdutos[i].preco;
             td_total.innerText = "R$" + (this.arrayProdutos[i].preco * this.arrayProdutos[i].qtde);
 
@@ -162,6 +152,22 @@ class Produto {
             iEditar.setAttribute('onclick', 'produto.deletar(' + this.arrayProdutos[i].id + ')');//1°arg: Dou uma ação a imagem, e segundo passo o que a ação irá fazer
             td_acao.appendChild(iEditar); //dentro de um td, vair ter um outro elemento, nesse caso a imagem
         }
+    }
+    enviaPedido(){
+        var date = new Date();
+        var dataBrasil = date.toLocaleString();
+        console.log(dataBrasil);
+        for (var i = 0; i < this.arrayProdutos.length; i++) {
+        var img_produto = this.arrayProdutos[i].imagem;
+        var nm_produto = this.arrayProdutos[i].nomeProduto;
+        var obs_produto = this.arrayProdutos[i].obs;
+        var qtde_produto = this.arrayProdutos[i].qtde
+        var preco_produto = this.arrayProdutos[i].preco;  
+        var total_produto = (this.arrayProdutos[i].preco * this.arrayProdutos[i].qtde);
+        var status_pedido = 'Pedido feito';   
+        }
+        var src = 'enviaPedido.php?data='+dataBrasil+'&imagem_produto='+img_produto+'&nome='+nm_produto+'&obs='+obs_produto+'&preco='+preco_produto+'&qtde='+qtde_produto+'&total='+total_produto+'&status='+status_pedido;
+        window.location.assign(src);
     }
     deletar(idDeletar) {
         if (confirm("Deseja realmente deletar?")) {
@@ -200,6 +206,8 @@ class Produto {
     }
 }
 var produto = new Produto();
+
+
 //cabecalho
 const header = document.querySelector("header");
 const logoimg = document.querySelector(".logoimg");
@@ -212,7 +220,6 @@ function diminuirHeader() {
         header.classList.add("classcabecalhomin");
         logoimg.style.width = "65px";
         logoimg.style.height = "62.5px";
-        logoimg.style.transition = ".7s";  
 
 
     } else if (window.pageYOffset == 0 && header.classList.contains("classcabecalhomin")) {
@@ -220,14 +227,13 @@ function diminuirHeader() {
         header.classList.remove("classcabecalhomin");
         logoimg.style.width = "120px";
         logoimg.style.height = "115px";
-        logoimg.style.transition = ".35s";  
     }
 }
 
 //popups
 const popdiv = document.querySelector('.popup-link');
 const popup = document.querySelector('.popup-fundo');
-const infe = document.querySelector('.fa-square-xmark');
+
 
 popdiv.addEventListener('click', () => {
     popup.style.display = 'block';
@@ -239,8 +245,8 @@ popdiv.addEventListener('click', () => {
 })
 
 popup.addEventListener('click', event => {
-    const clicado = event.target.classList[0];
-    if (clicado === 'popup-fechar' || clicado === 'popup-fundo'|| clicado === 'fa-solid' || clicado === 'fa-square-xmark') {
+    const classClickedElement = event.target.classList[0];
+    if (classClickedElement === 'popup-fechar' || classClickedElement === 'popup-fundo') {
         popup.style.display = 'none'
         function unloadScrollBars() {
             document.documentElement.style.overflow = 'auto';
@@ -248,8 +254,8 @@ popup.addEventListener('click', event => {
             document.body.scroll = "no";
         }
         unloadScrollBars();
-    }
-});
+    }
+})
 
 //accordion 
 const accordion_item = document.querySelectorAll(".accordion_item");
@@ -260,7 +266,7 @@ accordion_item.forEach((item) => {
     accordion_header_item.addEventListener("click", () => {
         const accordion_content_item = item.querySelector(".accordion_content");
 
-        const item_actived = document.querySelector(".activeacc");
+        const item_actived = document.querySelector(".active");
 
         VerifyActive(item, accordion_content_item, item_actived);
     });
@@ -274,12 +280,21 @@ function VerifyActive(item, content, content_actived) {
 
     if (content_actived) {
         content_actived.style.height = 0;
-        content_actived.classList.remove("activeacc");
+        content_actived.classList.remove("active");
     }
 
     if (content !== content_actived) {
         icon_item.innerHTML = "-";
-        content.classList.add("activeacc");
+        content.classList.add("active");
         content.style.height = content.scrollHeight + 10 + "px";
     }
 }
+
+//f5
+if (history.scrollRestoration) {
+    history.scrollRestoration = 'manual';
+} else {
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+        
+    }}
