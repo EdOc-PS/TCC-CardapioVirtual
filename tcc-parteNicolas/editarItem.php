@@ -153,7 +153,8 @@
                             for ($i=0; $i < sizeof($splitPreco); $i++) { 
                             ?>
                                 <label for="custo<?php echo $i;?>" class="labelPreco"><?php echo $i+1;?>° preço</label>
-                                <input type="text" name="custo<?php echo $i;?>" id="custo<?php echo $i;?>" value="<?php echo $splitPreco[$i];?>" oninput="criaPreco()" class="precoMultiplo">
+                                <br>
+                                <input type="text" name="custo<?php echo $i;?>" id="custo<?php echo $i;?>" value="<?php echo $splitPreco[$i];?>" oninput="criaPreco()" class="precoMultiplo"><br>
                             <?php
                             }
                             ?>

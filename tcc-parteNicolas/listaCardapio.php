@@ -10,11 +10,13 @@ require_once("conexao.php");
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="estiloLista.css">
+        <link rel="stylesheet" href="estilo_Pedidos.css">
+        <link rel="stylesheet" href="estilo_Guilherme.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
         <title>Document</title>
         <style>
             table, td, th{
-                border: solid black 1px;
+                border-bottom: solid black 2px;
                 border-collapse: collapse;
             }
             img{
@@ -24,6 +26,13 @@ require_once("conexao.php");
         </style>
     </head>
     <body>
+    <header><img src="img/logo3.png" class="logoimg">
+        <ul class="nav justify-content-end">
+        <li class="nav-item" >
+             <button class="menu-btn"><i class="fa-solid fa-house-chimney carrinho fa-2x"></i> </button>
+        </li>
+            </ul>
+      </header>
     <h1 style="top: 100px;" class="titulo">Listar Itens</h1>
     <div style="width: 80%; margin-top: 150px; margin-left: auto; margin-right: auto;">
         <?php
@@ -69,6 +78,8 @@ require_once("conexao.php");
             }    
         }
         ?>
+   
+    </table>
     </div>
     </body>
 
@@ -80,4 +91,5 @@ require_once("conexao.php");
             }
         }
     </script>
+      
 </html>

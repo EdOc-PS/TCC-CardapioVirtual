@@ -15,10 +15,14 @@
       width: 300px;
       height: auto;
     }
+    
     table, td, th{
-      border: solid black 1px;
+      width: 30vw;
+
       border-collapse: collapse;
+      border-bottom: 5px solid #adabab; 
     }
+    
   </style>
 </head>
 
@@ -30,7 +34,7 @@
 </li>
 </ul>
       </header>
-  <h1 style="top: 100px;" class="blog-title">OI</h1>
+  <h1 style="top: 100px;" class="titulo">OI</h1>
   <div style="width: 50%; margin-top: 150px; ">
   <?php
   require_once('conexao.php');
@@ -43,7 +47,9 @@
   // Open the directory
   $dirHandle = opendir($dir);
   ?>
-  <table class="table table-dark table-striped" style="text-align: center; vertical-align: middle; border: 0;">
+  <div class=divPedido>
+    <div class="SemP">
+  <table class="table table-light" style="text-align: center; vertical-align: middle;">
     <tr>
         <th>Imagem</th>
         <th>Excluir</th>
@@ -70,7 +76,7 @@
       <td><img src="<?php echo $dir . $file; ?>"></td>
       <td>
         <a href="" onclick="confirmaExclusao('<?php echo $dir . $file; ?>')">
-          <i style="color: red;" class="fa-trash fa-solid"></i>
+          <i style="color: #383737;" class="fa-trash fa-solid fa-3x"></i>
         </a>
       </td>
     </tr>
@@ -81,6 +87,8 @@
   closedir($dirHandle);
   ?>
   </table>
+   </div>
+   </div>
   </div>
 </body>
 

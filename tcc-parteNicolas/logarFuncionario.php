@@ -20,7 +20,7 @@
             $_SESSION["nomeFunc"] = $nomeCompleto[0];
             $_SESSION["sobrenomeFunc"] = $nomeCompleto[1];
             $_SESSION["emailFunc"] = $validarSenha["emailFuncionario"];
-            header("Location: admin-nicolas.php");
+            header("Location: admin.php");
         }
     }
 ?>
