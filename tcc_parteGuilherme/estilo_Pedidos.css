@@ -61,14 +61,14 @@ body{
 }
 
 h1 {
-    animation: anima 700ms ease;
+    animation: anima 600ms ease;
     margin-top: 40px;
     padding: 30px;
     color: #6e6e6e;
     margin-bottom: -40px;
 }
 .subti{
-    animation: anima2 1000ms ease;
+    animation: anima2 600ms ease;
     margin-top: 5em;
     margin-bottom: 30px;
     padding: 5px 100px;
@@ -77,17 +77,18 @@ h1 {
     border-bottom: 4px solid #adabab;
 }
 .divPedido{
- animation: anima2 700ms ease;
-  box-shadow: 0px 3px 13px #3f0c0b; 
+  animation: anima2 600ms ease;
+  box-shadow: 0px 5px 1em #3f0c0b; 
   background: #94443c;
   border-radius: 5px;
-  padding: 20px;
-  width: 60vw;
+  padding: 20px 50px;
+  width: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   align-items: center;
 }
+
 .divPedidoBranca_Pendente {
     border-radius: 5px;
     width: auto;
@@ -107,12 +108,13 @@ h1 {
     color: #474646;
     height: 10vh;
     border-radius: 10px;
-    width: 55vw;
+    width: 65vh;
     background-color: #fafdff;
     font-size: 23px;
     align-items: center;
     display: flex;
-    
+    font-weight: bold;
+    font-size: 25px;
 }
 .tabela{
     border: 3px solid #adabab;
@@ -136,11 +138,10 @@ th{
     background-color: #adabab;
     padding: 10px;
 }
-td{
-    
+td{    
     padding: 10px;
     text-align: center;
-    border: none;
+    border: 0;
     border-bottom: 2px solid #adabab;
 }
 /**Quebra de linha na descrição**/
@@ -171,74 +172,62 @@ input[type=submit]{
 }
 .buttonPedidoPendente {
     width: 130px;
-    height: 35px;
-    margin-left: 10px;
-    margin-right: 10px;
-    border: 2px solid #fcc204;
-    border-radius: 5px;
+    height: 40px;
+    margin: 5px;
+    border: 2px solid #e89d10;
+    border-radius: 10px;
     font-weight: bold;
     color: #383737;
     
 }
 .buttonPedidoPendente:hover {
-    background-color: #fcc204;
+    background-color: #e89d10;
     color: #f1efef;
     opacity: 0.9;
 }
 .buttonPedidoCancelado{
-    display: inline-block;
-    padding: 0px 5px;
+    
     width: 130px;
-    height: 35px;
-    margin-left: 10px;
-    margin-right: 10px;
-    border: 2px solid red;
-    border-radius: 5px;
+    height: 40px;
+    margin: 5px;
+    border: 2px solid #bd2a33;
+    border-radius: 10px;
     font-weight: bold;
     color: #383737;
 }
 .buttonPedidoCancelado:hover {
-    background-color: red;
+    background-color: #bd2a33;
     color: #f1efef;
-    opacity: 0.9;
+    opacity: .9;
 }
 .buttonPedidoConcluido{
-    display: inline-block;
-    padding: 0px 5px;
-    width: 130px;
-    height: 35px;
-    margin-left: 10px;
-    margin-right: 10px;
+    width: 170px;
+    height: 40px;
     border: 2px solid #028f76;
-    border-radius: 5px;
+    border-radius: 10px;
     font-weight: bold;
     color: #383737;
 }
 .buttonPedidoConcluido:hover {
     background-color: #028f76;  
-    color: white;
-    opacity: 0.9;
+    color: #f1efef;
+    opacity: .9;
 }
 .buttonPedidoFinalizado{
-    display: inline-block;
-    padding: 0px 5px;
-    width: 130px;
-    height: 35px;
-    margin-left: 10px;
-    margin-right: 10px;
+    width: 170px;
+    height: 40px;
     border: 2px solid #384161;
-    border-radius: 5px;
+    border-radius: 10px;
     font-weight: bold;
     color: #383737;
 }
 .buttonPedidoFinalizado:hover {
     background-color: #384161;
     color: white;
-    opacity: 0.9;
+    opacity: .9;
 }
 
-footer{
-    animation: anima 700ms ease;   
+footer{  
     color: #fafdff;
     align-items: center;
     margin-top: 20vh;

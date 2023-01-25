@@ -136,7 +136,7 @@ h1 {
       font-size: 20px;
       font-weight: bold;
       color: #6e6e6e;
-    
+   
   }
   .al{
     margin-top: 10px;
@@ -148,7 +148,6 @@ h1 {
   }
   .tabela{
     border: 3px solid #adabab;
-
     border-radius: 10px;
     overflow: hidden;
     height: 10vh;
@@ -181,13 +180,11 @@ tr:nth-child(even){
     text-align: center;
 }
 
-
 .textoPedido{
     text-align: center;
     font-size: 25px;
     font-weight: bold;
-    color:#474646; 
-    
+    color:#474646;  
 }
 .SemP{
     justify-content: center;
@@ -198,8 +195,7 @@ tr:nth-child(even){
     height: 10vh;
     border-radius: 10px;
 }
-footer{
-    animation: anima 700ms ease;   
+footer{  
     color: #fafdff;
     align-items: center;
     margin-top: 35vh;

@@ -1,9 +1,9 @@
 <?php
 
-    define('HOST', 'localhost:3307');
+    define('HOST', 'localhost');
     define('USER', 'root'); 
     define('PASSWORD', ''); 
-    define('DB', 'enviapedidos'); 
+    define('DB', 'enviapedido'); 
 
     try { 
         $conn = new mysqli(HOST, USER, PASSWORD, DB);

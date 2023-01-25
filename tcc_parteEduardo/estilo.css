@@ -49,7 +49,7 @@ header{
      .cardiv2 {
       margin-bottom: 150px;
       background: #f1efef;
-      border-radius: 5px;
+      border-radius: 10px;
       height: 80vh;
       width: auto;
       border: 3px solid #adabab;
@@ -102,20 +102,23 @@ header{
  }
  /***/
     .tabela{
+      border-radius: 5px;
+      overflow: hidden;
       border: none;
       border-collapse: collapse;
     
   }
-  .tabela td{
-    border-bottom: 3px solid #adabab;
-    padding: 7px;
+    .tabela td{
+      padding: 15px 10px;
+      background: #ebebeb;
+      border: none;
+      border-bottom: 3px solid #adabab;
   }
     .thCarrinho{   
       border: none;
-      color:#e9e8e8;
-      background: #adabab;
-      padding: 2px 15px;
-    
+      color: #383737;
+      background-color: #adabab;
+      padding: 5px 15px;
   }
     .imgCarrinho{
       margin: 2px;
@@ -133,7 +136,8 @@ header{
     border: 3px solid #adabab;;
     border-radius: 5px;
     position: relative;
-    top: 63vh;
+    top: 57vh;
+    cursor: pointer;
    
 }
   .buttonCarrinho:hover{
