@@ -16,12 +16,15 @@
       </ul>
       </header>
 
+    <h1 class="blog-title"> Adimistração <i class="fa-solid fa-computer"></i> </h1>
+
+
     <div class= DivCont>
         <div class="DivBranca">
  <table>
     <tr>
-        <td> <button class =butadm> <i class="fa-solid fa-pen-to-square icon fa-2x"></i> Progresso de Pedidos</Button></td>
-        <td> <button class =butadm> <i class="fa-solid fa-clock-rotate-left icon fa-2x"></i> Historico de Pedidos</button></td>
+        <td> <button class =butadm> <p><i class="fa-solid fa-pen-to-square icon fa-3x"></i></p>Progresso de Pedidos</Button></td>
+        <td> <button class =butadm> <p><i class="fa-solid fa-clock-rotate-left icon fa-3x"></i></p> Historico de Pedidos</button></td>
     </tr>
     <tr>
         <td><button class =butadm> Editar </button></td>

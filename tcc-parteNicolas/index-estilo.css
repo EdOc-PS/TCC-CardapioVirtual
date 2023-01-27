@@ -62,12 +62,12 @@ header .navCarrinho .cardiv {
 
 .tituloUsuario {
   font-size: 45px;
-  color: lightgrey;
+  color: #f1efef;
 }
 
 .navUser.active {
   right: 0;
-  transition: 80ms ease-out;
+  transition: 100ms ease-out;
 }
 
 /*.btnUsuario {
@@ -80,19 +80,18 @@ header .navCarrinho .cardiv {
 }*/
 
 .linkUsuario{
-  text-decoration: underline;
+  padding: 15px;
   background: transparent;
   width: 100%;
-  border-radius: 0;
-  border: 0;
-  font-size: 17px;
-  color: white;
+  font-size: 20px;
+  font-weight: bold ;
+  color: #f1efef;
+  cursor: pointer;
 }
 
 .linkUsuario:hover{
-  background: white;
+  background: #f1efef;
   color: #3a1624;
-  cursor: pointer;
 }
 
 /*.btnUsuario:hover {

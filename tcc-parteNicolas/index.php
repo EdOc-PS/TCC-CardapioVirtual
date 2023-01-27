@@ -42,7 +42,7 @@
       <?php 
       if (!isset($_SESSION["nomeCliente"])) {
       ?>
-        <h1 class="tituloUsuario">Login</h1>
+        <h1 class="tituloUsuario"> Login </h1>
         <a href="login.php" class="linkUsuario">Fazer login</a>
       <?php
       } else {
