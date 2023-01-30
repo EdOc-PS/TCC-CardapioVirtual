@@ -232,7 +232,7 @@
                 <div style="height: 30px;"></div>
 
 
-                <div class="input-block">
+                <div class="input-block" style="animation: move 500ms; animation-delay: 1200ms; animation-fill-mode: backwards;">
                     <label for="subtipo">Sub-tipo:</label><br>
                     <div style="margin-left: 20%;">
                         <select name="subtipo" id="subtipo" style="width: 60%;">

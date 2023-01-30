@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 23-Jan-2023 às 11:26
+-- Tempo de geração: 30-Jan-2023 às 12:36
 -- Versão do servidor: 10.4.24-MariaDB
 -- versão do PHP: 8.1.6
 
@@ -52,17 +52,19 @@ INSERT INTO `cliente` (`nomeCliente`, `numeroCliente`, `sobrenomeCliente`) VALUE
 --
 
 CREATE TABLE `funcionario` (
-  `nomeFuncionario` varchar(40) NOT NULL,
+  `nomeFuncionario` varchar(20) NOT NULL,
+  `sobrenomeFuncionario` varchar(20) NOT NULL,
   `emailFuncionario` varchar(50) NOT NULL,
-  `senhaFuncionario` varchar(30) NOT NULL
+  `senhaFuncionario` varchar(30) NOT NULL,
+  `idFuncionario` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Extraindo dados da tabela `funcionario`
 --
 
-INSERT INTO `funcionario` (`nomeFuncionario`, `emailFuncionario`, `senhaFuncionario`) VALUES
-('Henrique Augusto', 'henriqueaugusto@gmail.com', '123');
+INSERT INTO `funcionario` (`nomeFuncionario`, `sobrenomeFuncionario`, `emailFuncionario`, `senhaFuncionario`, `idFuncionario`) VALUES
+('Henrique', 'Augusto', 'henriqueamt@gmail.com', '123', 2);
 
 -- --------------------------------------------------------
 
@@ -87,7 +89,8 @@ CREATE TABLE `item` (
 
 INSERT INTO `item` (`nomeItem`, `idItem`, `descItem`, `precoItem`, `tipoItem`, `subtipoItem`, `nomeImg`, `extensaoImg`) VALUES
 ('Camarão', 14, 'Folhado de camarão', '12,00', 'Lanche', 'Folhados', '112581825.jpg', 'jpg'),
-('Pão de queijo', 26, 'Gostoso', '5,00', 'Lanche', 'Pão de Queijo', '1779605252.jpg', 'jpg');
+('Pão de queijo', 26, 'Gostoso', '5,00', 'Lanche', 'Pão de Queijo', '1779605252.jpg', 'jpg'),
+('Chemex', 37, '@@200ml/300ml', '@@6,50/7,50', 'Bebida', 'Filtrados', '1994434705.webp', 'webp');
 
 --
 -- Índices para tabelas despejadas
@@ -103,7 +106,7 @@ ALTER TABLE `cliente`
 -- Índices para tabela `funcionario`
 --
 ALTER TABLE `funcionario`
-  ADD PRIMARY KEY (`emailFuncionario`);
+  ADD PRIMARY KEY (`idFuncionario`);
 
 --
 -- Índices para tabela `item`
@@ -116,10 +119,16 @@ ALTER TABLE `item`
 --
 
 --
+-- AUTO_INCREMENT de tabela `funcionario`
+--
+ALTER TABLE `funcionario`
+  MODIFY `idFuncionario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT de tabela `item`
 --
 ALTER TABLE `item`
-  MODIFY `idItem` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+  MODIFY `idItem` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

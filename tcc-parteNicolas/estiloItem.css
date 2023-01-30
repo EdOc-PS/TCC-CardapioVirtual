@@ -68,6 +68,7 @@ form .input-block:nth-child(5){
     animation: move 500ms;
     animation-delay: 500ms;
     animation-fill-mode: backwards;
+    
 }
 form .input-block:nth-child(7){
     animation: move 500ms;
@@ -78,12 +79,18 @@ form .input-block:nth-child(9){
     animation: move 500ms;
     animation-delay: 900ms;
     animation-fill-mode: backwards;
-}
+}   
 form .input-block:nth-child(13){
     animation: move 500ms;
     animation-delay: 1100ms;
     animation-fill-mode: backwards;
 }
+form .input-block:nth-child(14){
+    animation: move 500ms;
+    animation-delay: 1500ms;
+    animation-fill-mode: backwards;
+}
+
 form .divcadastro{
     text-align: center; 
     margin-right: 15%;

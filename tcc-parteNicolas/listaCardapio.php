@@ -73,7 +73,7 @@ require_once("conexao.php");
         }
         ?>
    
-    </table>
+     </table>
              </div>
          </div>
     </div>
@@ -90,5 +90,4 @@ require_once("conexao.php");
       <footer>
    <i class="fa-solid fa-mug-saucer fa-2x" aria-hidden="true"></i>
    </footer>    
-</html>
 </html>
