@@ -11,17 +11,20 @@ const textoTabela = document.querySelector('.textoTabela');
 const tbodyCheckout = document.querySelector('.tbodyCheckout');
 const tbody = document.querySelector('.tbody');
 const checkCarrinho = document.querySelector('fa-solid fa-circle-check fa-1x');
+    
 btn.onclick = function () {
-
+ 
     this.classList.toggle('active');
     nav.classList.toggle('active');
-
+    
     if (imgcart.classList.contains("fa-cart-arrow-down")) {
         btnuser.classList.remove("user");
         btnuser.classList.add("user2");
         imgcart.classList.remove("fa-cart-arrow-down");
         imgcart.classList.add("fa-circle-xmark");
         imguser.classList.remove("fa-user-plus");
+      
+        
         /*subir botão com o click*/
     }
     else {

@@ -21,6 +21,18 @@ header{
     top: 0%;
     font-size: 20px;
     padding: 0px 50px;
+    z-index: 1000;
+}
+.header2{
+  width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    position: fixed;
+    top: 0%;
+    font-size: 20px;
+    padding: 0px 50px;
+    z-index: 0;
 }
     header nav{
         position: absolute;
@@ -56,6 +68,7 @@ header{
   }
      /** Carrinho-Tabela **/ 
      .inputQtde {
+
       width:30px;
       height: 20px;
       text-align: center;
@@ -223,6 +236,7 @@ header{
 }
    
 .escolha{
+    animation: animaindex 800ms ease;
     height: 40px;
     width: 50%;
     border-radius: 15px;
@@ -238,22 +252,24 @@ header{
     border-radius: 15px;
     vertical-align: middle;
     border: 0.5px solid #acaaaa;
-    width: 150%;
+    width: 130%;
   }
   .blog-title:before {
     right: .5em;
-    margin-left: -150%;
+    margin-left: -130%;
   }
   .blog-title:after {
     left: .5em;
-    margin-right: -150%;
+    margin-right: -130%;
   }
   h1{
       padding: 30px;
       color:#6e6e6e;
+      animation: animaindex 800ms ease;
   }
 
 .container {
+  animation: animaindex2 800ms ease;
   box-shadow: 0px 5px 1em #3f0c0b; 
   background: #94443c;
   border-radius: 5px;
@@ -265,6 +281,7 @@ header{
   align-items: center;
   }
 .container2 {
+  animation: animaindex2 800ms ease;
   box-shadow: 0px 5px 1em #3f0c0b; 
   background: #94443c;
   border-radius: 5px;
@@ -279,9 +296,11 @@ header{
     display: flex;
     flex-direction: column;
     gap: 2px; 
+
   }
   .accordion_item {
     width: 47vw;
+    animation: animaindex3 1000ms ease;
     border-radius: 10px;
   }
   .accordion_header {
@@ -316,6 +335,7 @@ header{
     width: 60%;
     height: 100%;
     display: none;
+    z-index: 2000;
 }
 
 
@@ -347,7 +367,7 @@ header{
   }
   .blog-title:after, .blog-title:before, h1{
     font-size: 27px;
-    width: 65%;
+    width: 55%;
   }
   
    .container, .container2{
@@ -378,5 +398,35 @@ header{
   }
   .fundo{
     width: 0;
+  }
+}
+@keyframes animaindex {
+  from{
+      transform: scale(0.99);
+      opacity: 0;    
+  }
+  to{
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+@keyframes animaindex2 {
+  from{
+      transform: translateY(10%);
+      opacity: 0;    
+  }
+  to{
+      transform: translateX(0%);
+      opacity: 1;
+  }
+}
+@keyframes animaindex3 {
+  from{
+      transform: scale(0.98);
+      opacity: 0;    
+  }
+  to{
+      transform: scale(1);
+      opacity: 1;
   }
 }
