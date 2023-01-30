@@ -114,7 +114,7 @@
                     <input type="text" id="nomeItem" name="nomeItem" placeholder="Nome" required value="<?php echo $exibir['nomeItem']; ?>">
                 </div>
 
-                <div style="height: 75px;"></div>
+                <div style="height: 45px;"></div>
 
                 <?php
                 if (isset($splitDesc)) {
@@ -136,7 +136,7 @@
                         </div>
                     </div>
 
-                    <div style="height: 70px;"></div>
+                    <div style="height: 45px;"></div>
 
                     <div class="input-block">
                         <label for="desc">Descrição:</label><br>
@@ -145,7 +145,7 @@
                         </textarea>
                     </div>
 
-                    <div style="height: 75px;"></div>
+                    <div style="height: 45px;"></div>
 
                     <div class="input-block">
                         <div id="containerPreco">
@@ -176,14 +176,14 @@
                         </div>
                     </div>
 
-                    <div style="height: 70px;"></div>
+                    <div style="height: 35px;"></div>
 
                     <div class="input-block">
                         <label for="desc">Descrição:</label><br>
                         <textarea name="desc" id="desc" cols="50" rows="2" style="width: 85%;" placeholder="Descrição"><?php echo $exibir['descItem']; ?></textarea>
                     </div>
 
-                    <div style="height: 75px;"></div>
+                    <div style="height: 35px;"></div>
 
                     <div class="input-block">
                         <div id="containerPreco">
@@ -270,9 +270,10 @@
                     <input type="submit" id="enviar" value="Cadastrar" style="margin-right: 10%;" class="btn btn-outline-primary">
                     <a href="listaCardapio.php"><input type="button" value="Cancelar" class="btn btn-outline-danger"></a>
                 </div>
-            </form>
+            
+        <div style="height: 65px;"></div>
+        </form> 
         </fieldset>
-        <div style="height: 75px;"></div>
     <?php
     } else {
         echo "<script>alert('Id de item não informado');</script>";

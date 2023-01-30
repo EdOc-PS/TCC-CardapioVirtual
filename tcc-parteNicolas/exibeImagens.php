@@ -10,20 +10,6 @@
   <link rel="stylesheet" href="estilo_Pedidos.css">
   <link rel="stylesheet" href="estilo_Guilherme.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-  <style>
-    img{
-      width: 300px;
-      height: auto;
-    }
-    
-    table, td, th{
-      width: 30vw;
-
-      border-collapse: collapse;
-      border-bottom: 5px solid #adabab; 
-    }
-    
-  </style>
 </head>
 
 <body>
@@ -34,8 +20,8 @@
 </li>
 </ul>
       </header>
-  <h1 style="top: 100px;" class="titulo">OI</h1>
-  <div style="width: 50%; margin-top: 150px; ">
+  <h1  class="titulo"> Listar Imagens <i class="fa-regular fa-images"></i> </h1>
+  <div class = div_1>
   <?php
   require_once('conexao.php');
   $sql = "SELECT * FROM item order by idItem";
@@ -49,8 +35,8 @@
   ?>
   <div class=divPedido>
     <div class="SemP">
-  <table class="table table-light" style="text-align: center; vertical-align: middle;">
-    <tr>
+  <table class="tabela">
+    <tr >
         <th>Imagem</th>
         <th>Excluir</th>
     </tr>
@@ -73,10 +59,10 @@
 
     ?>
     <tr>
-      <td><img src="<?php echo $dir . $file; ?>"></td>
+      <td><img class= imgex src="<?php echo $dir . $file; ?>"></td>
       <td>
         <a href="" onclick="confirmaExclusao('<?php echo $dir . $file; ?>')">
-          <i style="color: #383737;" class="fa-trash fa-solid fa-3x"></i>
+          <i style="color: #bd2a33;" class="fa-trash fa-solid fa-2x"></i>
         </a>
       </td>
     </tr>

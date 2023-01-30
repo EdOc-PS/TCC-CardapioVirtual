@@ -23,14 +23,14 @@
                 <input type="text" id="sobrenomeFunc" name="sobrenomeFunc" placeholder="Sobrenome" style="width: 41%" required>
             </div>
 
-            <div style="height: 75px;"></div>
+            <div style="height: 35px;"></div>
 
             <div class="input-block">
                 <label for="emailFunc">Email:</label><br>
                 <input type="text" id="emailFunc" name="emailFunc" placeholder="exemplo@gmail.com" required>
             </div>
 
-            <div style="height: 75px;"></div>
+            <div style="height: 35px;"></div>
 
             <div class="input-block">
                 <label for="senhaFunc">Senha:</label><br>
@@ -38,7 +38,7 @@
                 <i class="bi bi-eye-slash bi-eye" id="botaoSenha"></i>
             </div>
 
-            <div style="height: 75px;"></div>
+            <div style="height: 35px;"></div>
 
             <div class="input-block">
                 <label for="confirmaSenha">Confirme a senha:</label><br>
@@ -46,14 +46,14 @@
                 <i class="bi bi-eye-slash bi-eye" id="botaoConfirma"></i>
             </div>
 
-            <div style="height: 75px;"></div>
+            <div style="height: 45px;"></div>
 
             <div class= divcadastro>
                 <input type="submit" id="enviar" value="Cadastrar" style="margin-right: 10%;" class="btn btn-outline-primary">
                 <a href="index.html"><input type="button" value="Cancelar" class="btn btn-outline-danger"></a>
             </div>
         </form>
-        <div style="height: 15px;"></div>
+
     </fieldset>
     <script src="funcionario.js"></script>
 </body>

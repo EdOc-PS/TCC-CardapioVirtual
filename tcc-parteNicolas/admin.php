@@ -12,7 +12,7 @@
 <body>
 <header><img src="img/logo3.png" class="logoimg">
 <ul class="headerUL">
-      <li class="headerLI"><button class="menu-btn"><i class="fa-solid fa-user-gear carrinho fa-3x"></i> </button></li>
+      <!-- <li class="headerLI"><button class="menu-btn"><i class="fa-solid fa-user-gear carrinho fa-3x"></i> </button></li>-->
       </ul>
       </header>
 
@@ -23,19 +23,19 @@
         <div class="DivBranca">
  <table>
     <tr>
-        <td> <button class =butadm> <p><i class="fa-solid fa-pen-to-square icon fa-3x"></i></p>Progresso de Pedidos</Button></td>
-        <td> <button class =butadm> <p><i class="fa-solid fa-clock-rotate-left icon fa-3x"></i></p> Historico de Pedidos</button></td>
+        <td> <button class =butadm> <p><i class="fa-solid fa-pen-to-square icon fa-3x"></i></p> Progresso de Pedidos </Button></td>
+        <td> <button class =butadm> <p><i class="fa-solid fa-clock-rotate-left icon fa-3x"></i></p> Historico de Pedidos </button></td>
     </tr>
     <tr>
-        <td><button class =butadm> Editar </button></td>
-        <td><button class =butadm> Listar </button></td>
+        <td><button class =butadm><p> <i class="fa-regular fa-rectangle-list icon fa-3x"></i></p> Listar Cardápio </button></td>
+        <td><button class =butadm><p> <i class="fa-regular fa-images icon fa-3x"></i></p> Listar Imagens </button></td>
     </tr>
     <tr>
-        <td><button class =butadm> Pinto </button></td>
-        <td><button class =butadm> Pinto </button></td>
+        <td><button class =butadm> Cadastrar Item </button></td>
+        <td><button class =butadm> Cadastrar Funcionário </button></td>
     </tr>
     <tr>
-        <td colspan="2"><button class =butadm>Pinto</button></td>
+        <td colspan="2"><button class =butadm> Listar Funcionário </button></td>
     </tr>
 </table>
 </div>

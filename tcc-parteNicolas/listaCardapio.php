@@ -14,15 +14,7 @@ require_once("conexao.php");
         <link rel="stylesheet" href="estilo_Guilherme.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
         <title>Document</title>
-        <style>
-            table, td, th{
-                border-bottom: solid black 2px;
-                border-collapse: collapse;
-            }
-            img{
-                width: 100px;
-                height: auto;
-            }
+      
         </style>
     </head>
     <body>
@@ -33,14 +25,16 @@ require_once("conexao.php");
         </li>
             </ul>
       </header>
-    <h1 style="top: 100px;" class="titulo">Listar Itens</h1>
-    <div style="width: 80%; margin-top: 150px; margin-left: auto; margin-right: auto;">
+    <h1 class="titulo"> Listar Cardápio <i class="fa-regular fa-rectangle-list"></i> </h1>
+    <div class="div_1">
         <?php
         $sql = "SELECT * FROM item order by subtipoItem";
         $resultado = $conn->query($sql);
         if($resultado->num_rows > 0){
             ?>
-            <table class="table table-dark table-striped" style="text-align: center; vertical-align: middle;">
+            <div class=divPedido>
+                <div class="SemP">
+            <table class="tabela">
                 <tr>
                     <th>Id</th>
                     <th>Nome</th>
@@ -66,11 +60,11 @@ require_once("conexao.php");
                     <td><?php echo $exibir["precoItem"]; ?></td>
                     <td><?php echo $exibir["tipoItem"]; ?></td>
                     <td><?php echo $exibir["subtipoItem"]; ?></td>
-                    <td><img src="imagens/<?php echo $exibir["nomeImg"] ?> "></td>
-                    <td><a style="color: rgb(214, 111, 1);" href="editarItem.php?idItem=<?php echo $exibir['idItem'] ?>"><i class="fa-regular fa-pen-to-square"></i></a></td>
+                    <td><img class = "imged" src="imagens/<?php echo $exibir["nomeImg"] ?> "></td>
+                    <td><a style="color: #d66f01;" href="editarItem.php?idItem=<?php echo $exibir['idItem'] ?>"><i class="fa-regular fa-pen-to-square fa-lg"></i></a></td>
                     <td><a href="" onclick="confirmaApagar(
                         '<?php echo $exibir['nomeItem'] ?>', <?php echo $exibir['idItem'] ?>)">
-                            <i style="color: red;" class="fa-trash fa-solid"></i>
+                            <i style="color: #bd2a33;" class="fa-trash fa-solid fa-lg"></i>
                         </a>
                     </td>
                 </tr>
@@ -80,6 +74,8 @@ require_once("conexao.php");
         ?>
    
     </table>
+             </div>
+         </div>
     </div>
     </body>
 
@@ -91,5 +87,8 @@ require_once("conexao.php");
             }
         }
     </script>
-      
+      <footer>
+   <i class="fa-solid fa-mug-saucer fa-2x" aria-hidden="true"></i>
+   </footer>    
+</html>
 </html>

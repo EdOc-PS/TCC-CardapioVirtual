@@ -21,8 +21,7 @@ i{
     animation: fade 1s;
 }
 .bordaForm{
-
-    border: 1px solid rgb(78, 77, 77);
+    border: 1px solid #4e4d4d;
     border-radius: 10px;
     width: 40%;
     margin-right: auto;
@@ -39,14 +38,6 @@ i{
     font-size: 22px;
     color: whitesmoke;
     width: 100px;
-}
-.divlink:hover{
-    background: white;
-    border-radius: 6px;
-    height: auto;
-    color: #3a1624;
-    transition: all .2s ease-in-out;
-    position: relative;
 }
 
 
@@ -67,12 +58,22 @@ form .input-block:nth-child(3){
     animation-delay: 400ms;
     animation-fill-mode: backwards;
 }
+form .input-block:nth-child(5){
+    animation: move 500ms;
+    animation-delay: 600ms;
+    animation-fill-mode: backwards;
+}
+form .input-block:nth-child(7){
+    animation: move 500ms;
+    animation-delay: 800ms;
+    animation-fill-mode: backwards;
+}
 .divcadastro{
     text-align: center; 
     margin-right: 15%;
-    margin-top: 8%;
-    animation: move 500ms;
-    animation-delay: 600ms;
+     
+    animation: fade 500ms;
+    animation-delay: 800ms;
     animation-fill-mode: backwards;
 }
 label{
@@ -81,7 +82,7 @@ label{
    
 }
 textarea{
-    background-color:rgb(251, 249, 249);
+    background-color:#fbf9f9;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     width: 85%;
@@ -92,7 +93,7 @@ textarea{
 }
 
 input[type=text]{
-    background-color:rgb(251, 249, 249);
+    background-color:#fbf9f9;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     width: 85%;
@@ -157,7 +158,7 @@ input[type=file]{
     margin-right: auto;
     margin-left: auto;
     margin-top: 8%;
-    /*height: 750px;*/
+    height: 65vh;
     background-color: white;
     animation: fade 1s;
 }
