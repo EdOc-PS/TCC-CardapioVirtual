@@ -12,6 +12,7 @@ header{
     top: 0%;
     padding: 0px 50px;
     background: linear-gradient(800deg, #3a1624, #711613);
+    z-index: 1000;
 }
 body{
     align-items: center;
@@ -25,7 +26,7 @@ body{
 
 img{   
     margin-top: 5px;
-    width: 80px;
+    width: 100px;
     height: auto;
     border-radius: 5px;
 }
