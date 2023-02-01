@@ -54,7 +54,7 @@ header{
       margin-bottom: 150px;
       background: #f1efef;
       border-radius: 15px;
-      height: 80vh;
+      height: 80%;
       width: 30vw;
       border: 3px solid #adabab;
   }
@@ -62,13 +62,12 @@ header{
       margin-bottom: 150px;
       background: #f1efef;
       border-radius: 10px;
-      height: 80vh;
+      height: 80%;
       width: auto;
       border: 3px solid #adabab;
   }
      /** Carrinho-Tabela **/ 
      .inputQtde {
-
       width:30px;
       height: 20px;
       text-align: center;
@@ -119,6 +118,7 @@ header{
       overflow: hidden;
       border: none;
       border-collapse: collapse;
+   
     
   }
     .tabela td{
@@ -148,10 +148,10 @@ header{
     color: #6e6e6e;
     border: 3px solid #adabab;;
     border-radius: 5px;
-    position: relative;
-    top: 57vh;
     cursor: pointer;
-   
+    margin-top: 10px;
+    position: relative;
+    top: 55vh;
 }
   .buttonCarrinho:hover{
     border: #741413;
@@ -359,7 +359,22 @@ header{
     width: 40%;
   }
 }
-
+@media(max-height:850px){
+  .buttonCarrinho{
+    top: 55vh;
+  } 
+  header nav {
+    width: 45%;
+  }
+  .fundo{
+    width:55%
+  }
+}
+@media(max-height:739px){
+  .buttonCarrinho{
+    top: 45vh;
+  } 
+}
 @media(max-width: 950px)
 {
   .escolha{
