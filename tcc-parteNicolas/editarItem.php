@@ -201,7 +201,7 @@
 
 
                 <div class="input-block">
-                    <label for="tipo">Tipo:</label><br>
+                    <label style="margin-left: 39%;" for="tipo">Tipo:</label><br>
                     <div style="margin-left: 20%;">
                         <select name="tipo" id="tipo" style="width: 60%;" onchange="mudaOpcao()">
                             <option value="Lanche">Lanche</option>
@@ -233,7 +233,7 @@
 
 
                 <div class="input-block" style="animation: move 500ms; animation-delay: 1200ms; animation-fill-mode: backwards;">
-                    <label for="subtipo">Sub-tipo:</label><br>
+                    <label style="margin-left: 36%;" for="subtipo">Sub-tipo:</label><br>
                     <div style="margin-left: 20%;">
                         <select name="subtipo" id="subtipo" style="width: 60%;">
                             <option value="Quiches">Quiches</option>
@@ -248,12 +248,12 @@
                 <div style="height: 30px;"></div>
 
                 <div class="input-block" id="divBotao">
-                    <label for="avisoMudar">Deseja mudar a imagem desse item?</label>
+                    <label style="margin-left: 12%;" for="avisoMudar">Deseja mudar a imagem desse item?</label>
                     <input type="button" onclick="mostraFile()" class="btn btn-warning" name="avisoMudar" id="avisoMudar" value="Mudar imagem do item" style="margin-left: 25%; width: 35%;">
                 </div>
 
                 <div id="divImagem" hidden>
-                    <label for="imagem">Imagem(deixe o campo vazio para nao alterar):</label>
+                    <label for="imagem">Imagem: (Deixe o campo vazio para não alterar)</label>
                     <input type="file" class="form-control" accept="image/*" name="imagem" id="imagem">
                 </div>
 
@@ -271,7 +271,7 @@
                     <a href="listaCardapio.php"><input type="button" value="Cancelar" class="btn btn-outline-danger"></a>
                 </div>
             
-        <div style="height: 65px;"></div>
+        <div style="height: 75px;"></div>
         </form> 
         </fieldset>
     <?php
