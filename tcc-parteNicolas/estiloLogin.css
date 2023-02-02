@@ -21,12 +21,14 @@ i{
     animation: fade 1s;
 }
 .bordaForm{
+
     border: 1px solid rgb(78, 77, 77);
     border-radius: 10px;
     width: 40%;
     margin-right: auto;
     margin-left: auto;
     margin-top: 8%;
+    /*height: 720px;*/
     background-color: white;
     animation: fade 1s;
 }

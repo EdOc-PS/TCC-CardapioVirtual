@@ -89,7 +89,7 @@
 
             <div class= divcadastro>
                 <input type="submit" id="enviar" value="Cadastrar" style="margin-right: 10%;" class="btn btn-outline-primary">
-                <a href="index.html"><input type="button" value="Cancelar" class="btn btn-outline-danger"></a>
+                <a href="admin.php"><input type="button" value="Cancelar" class="btn btn-outline-danger"></a>
             </div>
   
     <div style="height: 75px;"></div>
@@ -98,4 +98,4 @@
     <script src="subtipo.js"></script>
 </body>
 
-</html>
+</html> 

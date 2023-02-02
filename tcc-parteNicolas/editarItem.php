@@ -277,7 +277,7 @@
     <?php
     } else {
         echo "<script>alert('Id de item não informado');</script>";
-        header("location: listaCardapio.php");
+        echo "<script>window.location = 'listaCardapio.php';</script>";
     }
     ?>
     <script src="subtipo.js"></script>

@@ -108,6 +108,7 @@ footer .caixa:nth-child(4) {
     width: 100%;
     height: 100%;
     display: none;
+    z-index: 1100;
 }
 
 .popup{
@@ -117,10 +118,10 @@ footer .caixa:nth-child(4) {
     margin: 10% auto;
     padding: 7.5px;
     background:#94443c;
-    ;
     position: relative;
     border-radius: 5px;
     animation: popup 500ms;
+    margin-top: 8%;
 }
 .popupbranco{
     border-radius: 10px;
@@ -129,7 +130,7 @@ footer .caixa:nth-child(4) {
 
 }
 .fa-square-xmark{
-    color: #f1efef;
+    color: #94443c;
     
 }
 .popup-fechar{
@@ -215,9 +216,23 @@ button.popup-link{
     width: 50px;
     border-radius: 5px;
 }
+.popup-button:hover{
+    background: #6e5a67;
+}
 .popup-button:nth-child(1){
     background: #9c5d5b;
 }
+.popup-button:nth-child(1):hover{
+    background: #86504e;
+}
+.textpop{
+    margin-right: 2ch;
+    width: 490px;
+    height: 7vh;
+    border-radius: 5px;
+    border: 2px solid #adabab;
+} 
+
 .popup-tabimg{
     width: 555px;
     height: 300px;
