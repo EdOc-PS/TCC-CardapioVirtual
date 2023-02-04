@@ -1,0 +1,300 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+    padding: 0px 50px;
+    background: linear-gradient(800deg, #3a1624, #711613);
+    z-index: 1000;
+}
+
+body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.logoimg {
+    height: 115px;
+    width: 120px;
+}
+
+.menu-btn {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    width: 50px;
+    height: auto;
+}
+
+.menu-btn:hover {
+    transition: .2s linear;
+    background: white;
+    height: 55px;
+    width: 60px;
+    border-radius: 8px;
+}
+
+.blog-title:before,
+.blog-title:after {
+    background-color: #adabab;
+    content: "";
+    display: inline-block;
+    height: 4px;
+    border-radius: 15px;
+    vertical-align: middle;
+    border: 0.5px solid #acaaaa;
+    width: 60%;
+}
+
+.blog-title:before {
+    right: .5em;
+    margin-left: -60%;
+}
+
+.blog-title:after {
+    left: .5em;
+    margin-right: -60%;
+}
+
+h1 {
+    animation: anima 800ms ease;
+    margin-top: 40px;
+    padding: 30px;
+    color: #6e6e6e;
+    margin-bottom: -40px;
+}
+
+.subti {
+    animation: anima2 800ms ease;
+    margin-top: 5em;
+    margin-bottom: 30px;
+    padding: 5px 100px;
+    color: #6e6e6e;
+    border-radius: 2px;
+    border-bottom: 4px solid #adabab;
+}
+
+.divPedido {
+    animation: anima2 800ms ease;
+    box-shadow: 0px 5px 1em #3f0c0b;
+    background: #94443c;
+    border-radius: 5px;
+    padding: 20px 50px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.divPedidoBranca_Pendente {
+    border-radius: 5px;
+    width: auto;
+    background-color: #fafdff;
+}
+
+.divPedidoBranca_Processo {
+    border-radius: 5px;
+    width: auto;
+    background-color: #fafdff;
+    ;
+}
+
+.divPedidoBranca_Concluido {
+    border-radius: 5px;
+    width: auto;
+    background-color: #fafdff;
+}
+
+.divPedidoBranca_vazia {
+    color: #474646;
+    height: 10vh;
+    border-radius: 10px;
+    width: 65vh;
+    background-color: #fafdff;
+    font-size: 23px;
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.tabela {
+    border: 3px solid #adabab;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 10vh;
+    width: 60vw;
+    background: #fafdff;
+    cursor: default;
+}
+
+.textoPedido {
+    text-align: center;
+    width: 100%;
+}
+
+.textoProcesso {
+    text-align: center;
+    width: 100%;
+}
+
+th {
+    color: #383737;
+    background-color: #adabab;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    border: 0;
+    border-bottom: 2px solid #adabab;
+}
+
+tr:nth-child(even) {
+    background: #e1e4e6;
+}
+
+img {
+    margin-top: 5px;
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.divStatus {
+    display: inline-block;
+}
+
+.divCancelado {
+    display: inline-block;
+}
+
+input[type=submit] {
+    cursor: pointer;
+}
+
+.buttonPedidoPendente {
+    width: 130px;
+    height: 40px;
+    margin: 5px;
+    border: 2px solid #e89d10;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #383737;
+
+}
+
+.buttonPedidoPendente:hover {
+    background-color: #e89d10;
+    color: #f1efef;
+    opacity: 0.9;
+}
+
+.buttonPedidoCancelado {
+
+    width: 130px;
+    height: 40px;
+    margin: 5px;
+    border: 2px solid #bd2a33;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #383737;
+}
+
+.buttonPedidoCancelado:hover {
+    background-color: #bd2a33;
+    color: #f1efef;
+    opacity: .9;
+}
+
+.buttonPedidoConcluido {
+    width: 170px;
+    height: 40px;
+    border: 2px solid #028f76;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #383737;
+}
+
+.buttonPedidoConcluido:hover {
+    background-color: #028f76;
+    color: #f1efef;
+    opacity: .9;
+}
+
+.buttonPedidoInterrompido {
+    width: 170px;
+    height: 40px;
+    margin: 5px;
+    border: 2px solid #f18723;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #383737;
+}
+
+.buttonPedidoInterrompido:hover {
+    background-color: #f18723;
+    color: #f1efef;
+    opacity: .9;
+}
+
+.buttonPedidoFinalizado {
+    width: 170px;
+    height: 40px;
+    border: 2px solid #384161;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #383737;
+}
+
+.buttonPedidoFinalizado:hover {
+    background-color: #384161;
+    color: white;
+    opacity: .9;
+}
+
+footer {
+    color: #fafdff;
+    align-items: center;
+    margin-top: 45vh;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    background: #444;
+    padding: 0px 50px;
+}
+
+@keyframes anima {
+    from {
+        transform: scale(0.99);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes anima2 {
+    from {
+        transform: translateY(10%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
